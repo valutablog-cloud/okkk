@@ -39,23 +39,19 @@ jobs:
       - name: Build IPSharkk (x64)
         run: msbuild IPSharkk.sln /p:Configuration=Release /p:Platform=x64 /verbosity:minimal
 
-      - name: Build TuxlerProxy (x64)
-        run: msbuild TuxlerProxy.sln /p:Configuration=Release /p:Platform=x64 /verbosity:minimal
-      - name: List build outputs (find exe)
-        shell: pwsh
-        run: |
-          echo "Searching for EXE files..."
-          Get-ChildItem -Recurse -Include *.exe | ForEach-Object { $_.FullName }
+      - name: Upload EXE artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: VPNClients
+          path: |
+            **/Win32/Release/*.exe
+            **/x64/Release/*.exe
 
-      - name: List build output
-        run: |
-          echo "Contents of Release folder:"
-          dir Release || echo "No Release folder"
 
       - name: Upload EXE artifacts
         uses: actions/upload-artifact@v4
         with:
           name: VPNClients
           path: |
-            **/Release/*.exe
+            **/Win32/Release/*.exe
             **/x64/Release/*.exe
