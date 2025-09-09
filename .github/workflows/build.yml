@@ -1,3 +1,11 @@
+name: Build VPN Clients (Win32)
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
 jobs:
   build:
     runs-on: windows-latest
@@ -20,8 +28,7 @@ jobs:
       - name: Verify Qt tools
         run: qmake -v
 
-      # ⬇️ ДОБАВЛЯЕМ QtMsBuild (Qt.props / Qt.targets)
-      - name: Install QtMsBuild
+      - name: Install QtMsBuild (Qt.props / Qt.targets)
         run: |
           git clone https://github.com/qt-labs/vstools.git
           mkdir $env:Qt5_Dir\msbuild
