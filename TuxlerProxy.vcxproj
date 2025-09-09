@@ -14,7 +14,7 @@
     <ProjectGuid>{2BBD6B01-3F06-33C5-83B1-B15197641359}</ProjectGuid>
     <RootNamespace>TuxlerProxy</RootNamespace>
     <Keyword>Qt4VSv1.0</Keyword>
-    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
@@ -6283,3 +6283,4 @@ $(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_DISABLE_DEPRECATED_BEFORE=0x000000 
   </ProjectExtensions>
 
 </Project>
+
