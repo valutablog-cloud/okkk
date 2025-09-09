@@ -47,7 +47,7 @@ jobs:
           echo "Contents of vstools_src\\QtMsBuild:"
           dir "vstools_src\QtMsBuild"
           echo "Contents of msbuild folder:"
-          dir "$env:Qt5_Dir\msbuild""
+          dir "$env:Qt5_Dir\msbuild"
 
       # --- Устанавливаем переменную QtMsBuild ---
       - name: Set QtMsBuild path
