@@ -26,42 +26,32 @@ jobs:
           version: '5.15.2'
           arch: win64_msvc2019_64
 
-      # --- Ставим MSBuild ---
-      - name: Setup MSBuild
-        uses: microsoft/setup-msbuild@v2
+  # --- Ставим MSBuild ---
+  - name: Setup MSBuild
+    uses: microsoft/setup-msbuild@v2
 
-      # --- Качаем QtMsBuild ---
-      - name: Download QtMsBuild
-        run: |
-          git clone --depth=1 https://github.com/qt-labs/vstools.git vstools_src
-          mkdir "$env:Qt5_Dir\msbuild"
+  - name: Check MSBuild
+    run: where msbuild
 
-      # --- Собираем QtMsBuild ---
-      - name: Build QtMsBuild
-        run: |
-          msbuild vstools_src\QtMSBuild\QtMSBuild.csproj /p:Configuration=Release
-          Copy-Item "vstools_src\QtMSBuild\bin\Release\*" "$env:Qt5_Dir\msbuild\" -Recurse -Force
+  # --- Качаем QtMsBuild ---
+  - name: Download QtMsBuild
+    run: git clone --depth=1 https://github.com/qt-labs/vstools.git vstools_src
 
-          echo "=== Содержимое QtMsBuild ==="
-          dir "vstools_src\QtMSBuild"
+  # --- Собираем QtMsBuild ---
+  - name: Build QtMsBuild
+    run: |
+      msbuild vstools_src\QtMSBuild\QtMSBuild.csproj /p:Configuration=Release
+      mkdir "$env:Qt5_Dir\msbuild"
+      Copy-Item "vstools_src\QtMSBuild\bin\Release\*" "$env:Qt5_Dir\msbuild\" -Recurse -Force
 
-          echo "=== Содержимое msbuild после копирования ==="
-          dir "$env:Qt5_Dir\msbuild"
+      echo "=== Проверяем, что Qt.props есть ==="
+      dir "$env:Qt5_Dir\msbuild"
+      Get-Content "$env:Qt5_Dir\msbuild\Qt.props" -TotalCount 20
 
-          echo "=== Первые строки Qt.props ==="
-          Get-Content "$env:Qt5_Dir\msbuild\Qt.props" -TotalCount 30
+  # --- Устанавливаем переменную QtMsBuild ---
+  - name: Set QtMsBuild path
+    run: echo "QtMsBuild=$env:Qt5_Dir\msbuild" >> $env:GITHUB_ENV
 
-          
-          mkdir "$env:Qt5_Dir\msbuild"
-          Copy-Item "vstools_src\QtMsBuild\*" "$env:Qt5_Dir\msbuild\" -Recurse -Force
-          echo "Contents of vstools_src\\QtMsBuild:"
-          dir "vstools_src\QtMsBuild"
-          echo "Contents of msbuild folder:"
-          dir "$env:Qt5_Dir\msbuild"
-
-      # --- Устанавливаем переменную QtMsBuild ---
-      - name: Set QtMsBuild path
-        run: echo "QtMsBuild=$env:Qt5_Dir\msbuild" >> $env:GITHUB_ENV
 
       # --- Билдим Win32 ---
       - name: Build IPSharkk (Win32)
