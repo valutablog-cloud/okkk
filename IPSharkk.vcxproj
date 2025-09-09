@@ -1,6 +1,5 @@
-<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-
-  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -11,22 +10,30 @@
       <Configuration>Release</Configuration>
       <Platform>Win32</Platform>
     </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
   </ItemGroup>
 
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{3B6F5B1E-1234-4ABC-9876-1234567890AB}</ProjectGuid>
+    <ProjectGuid>{D6A5F53E-7A7A-4D39-97D7-65D8AFCB91F2}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>IPSharkk</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
 
-  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v143</PlatformToolset>
-    <CharacterSet>MultiByte</CharacterSet>
+    <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
@@ -34,57 +41,106 @@
     <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>v143</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
-    <CharacterSet>MultiByte</CharacterSet>
+    <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
 
-  <!-- Пути к Qt -->
-  <PropertyGroup>
-    <QtInstallDir>$(Qt5_Dir)</QtInstallDir>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
 
-  <ImportGroup Label="ExtensionSettings">
-    <Import Project="$(QtInstallDir)\msvc2019\Qt.props" Condition="exists('$(QtInstallDir)\msvc2019\Qt.props')" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
 
-  <!-- Исходники -->
+  <PropertyGroup Label="UserMacros" />
+
   <ItemGroup>
-    <ClCompile Include="*.cpp" />
-    <ClCompile Include="gui\**\*.cpp" />
-    <ClCompile Include="js\**\*.cpp" />
-    <ClCompile Include="IPSharkkResources\**\*.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="mainwindow.cpp" />
+    <ClCompile Include="tooltip.cpp" />
+    <ClCompile Include="translator.cpp" />
+    <ClCompile Include="proxysettings.cpp" />
+    <ClCompile Include="settings.cpp" />
+    <ClCompile Include="systemproxy.cpp" />
+    <ClCompile Include="messageqeue.cpp" />
+    <ClCompile Include="parsemessage.cpp" />
+    <ClCompile Include="newipengineconnector.cpp" />
+    <ClCompile Include="instancecommunication.cpp" />
+    <ClCompile Include="WebSocketClient.cpp" />
+    <ClCompile Include="jsbridge.cpp" />
+    <ClCompile Include="EngineEvents.cpp" />
+    <ClCompile Include="EngineImpl.cpp" />
+    <ClCompile Include="tuxlerapp.cpp" />
+    <ClCompile Include="sha1.cpp" />
+    <ClCompile Include="functions_.cpp" />
+    <ClCompile Include="iplist.cpp" />
+    <ClCompile Include="base64.cpp" />
   </ItemGroup>
 
   <ItemGroup>
-    <ClInclude Include="*.h" />
-    <ClInclude Include="gui\**\*.h" />
-    <ClInclude Include="js\**\*.h" />
-    <ClInclude Include="IPSharkkResources\**\*.h" />
+    <QtMoc Include="mainwindow.h" />
+    <QtMoc Include="tooltip.h" />
+    <QtMoc Include="translator.h" />
+    <QtMoc Include="proxysettings.h" />
+    <QtMoc Include="settings.h" />
+    <QtMoc Include="systemproxy.h" />
+    <QtMoc Include="messageqeue.h" />
+    <QtMoc Include="parsemessage.h" />
+    <QtMoc Include="newipengineconnector.h" />
+    <QtMoc Include="instancecommunication.h" />
+    <QtMoc Include="WebSocketClient.h" />
+    <QtMoc Include="jsbridge.h" />
+    <QtMoc Include="tuxlerapp.h" />
   </ItemGroup>
 
-  <!-- Qt moc/uic/rcc -->
   <ItemGroup>
-    <QtMoc Include="*.h" />
-    <QtMoc Include="gui\**\*.h" />
-    <QtMoc Include="js\**\*.h" />
-    <QtMoc Include="IPSharkkResources\**\*.h" />
-
-    <QtUic Include="*.ui" />
-    <QtUic Include="gui\**\*.ui" />
-    <QtUic Include="IPSharkkResources\**\*.ui" />
-
-    <QtRcc Include="*.qrc" />
-    <QtRcc Include="IPSharkkResources\**\*.qrc" />
+    <QtUic Include="mainwindow.ui" />
+    <QtUic Include="mainwindowIPSHARKK.ui" />
+    <QtUic Include="tooltip.ui" />
+    <QtUic Include="tooltipIPSHARKK.ui" />
   </ItemGroup>
 
-  <!-- Ресурсы -->
   <ItemGroup>
-    <Image Include="*.ico" />
-    <Image Include="img\**\*.png" />
-    <Image Include="img\**\*.gif" />
-    <Image Include="flags\**\*.png" />
+    <QtRcc Include="resources.qrc" />
+    <QtRcc Include="resourcesIPSharkk.qrc" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ResourceCompile Include="AppInfo.rc" />
+    <ResourceCompile Include="AppInfoIPSharkk.rc" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Image Include="ico.ico" />
+    <Image Include="icoIPSharkk.ico" />
   </ItemGroup>
 
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
-  <Import Project="$(QtInstallDir)\msvc2019\Qt.targets" Condition="exists('$(QtInstallDir)\msvc2019\Qt.targets')" />
+  <ImportGroup Label="ExtensionTargets" />
+  <Import Project="$(QtMsBuild)\Qt.props" />
+  <Import Project="$(QtMsBuild)\Qt.targets" />
 
 </Project>
