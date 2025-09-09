@@ -26,32 +26,31 @@ jobs:
           version: '5.15.2'
           arch: win64_msvc2019_64
 
-  # --- Ставим MSBuild ---
-  - name: Setup MSBuild
-    uses: microsoft/setup-msbuild@v2
+      # --- Ставим MSBuild ---
+      - name: Setup MSBuild
+        uses: microsoft/setup-msbuild@v2
 
-  - name: Check MSBuild
-    run: where msbuild
+      - name: Check MSBuild
+        run: where msbuild
 
-  # --- Качаем QtMsBuild ---
-  - name: Download QtMsBuild
-    run: git clone --depth=1 https://github.com/qt-labs/vstools.git vstools_src
+      # --- Качаем QtMsBuild ---
+      - name: Download QtMsBuild
+        run: git clone --depth=1 https://github.com/qt-labs/vstools.git vstools_src
 
-  # --- Собираем QtMsBuild ---
-  - name: Build QtMsBuild
-    run: |
-      msbuild vstools_src\QtMSBuild\QtMSBuild.csproj /p:Configuration=Release
-      mkdir "$env:Qt5_Dir\msbuild"
-      Copy-Item "vstools_src\QtMSBuild\bin\Release\*" "$env:Qt5_Dir\msbuild\" -Recurse -Force
+      # --- Собираем QtMsBuild ---
+      - name: Build QtMsBuild
+        run: |
+          msbuild vstools_src\QtMSBuild\QtMSBuild.csproj /p:Configuration=Release
+          mkdir "$env:Qt5_Dir\msbuild"
+          Copy-Item "vstools_src\QtMSBuild\bin\Release\*" "$env:Qt5_Dir\msbuild\" -Recurse -Force
 
-      echo "=== Проверяем, что Qt.props есть ==="
-      dir "$env:Qt5_Dir\msbuild"
-      Get-Content "$env:Qt5_Dir\msbuild\Qt.props" -TotalCount 20
+          echo "=== Проверяем, что Qt.props есть ==="
+          dir "$env:Qt5_Dir\msbuild"
+          Get-Content "$env:Qt5_Dir\msbuild\Qt.props" -TotalCount 20
 
-  # --- Устанавливаем переменную QtMsBuild ---
-  - name: Set QtMsBuild path
-    run: echo "QtMsBuild=$env:Qt5_Dir\msbuild" >> $env:GITHUB_ENV
-
+      # --- Устанавливаем переменную QtMsBuild ---
+      - name: Set QtMsBuild path
+        run: echo "QtMsBuild=$env:Qt5_Dir\msbuild" >> $env:GITHUB_ENV
 
       # --- Билдим Win32 ---
       - name: Build IPSharkk (Win32)
