@@ -1,85 +1,77 @@
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 
+  <!-- Подключаем базовые props -->
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+
   <ItemGroup Label="ProjectConfigurations">
-    <ProjectConfiguration Include="Release|Win32">
-      <Configuration>Release</Configuration>
-      <Platform>Win32</Platform>
-    </ProjectConfiguration>
     <ProjectConfiguration Include="Debug|Win32">
       <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
       <Platform>Win32</Platform>
     </ProjectConfiguration>
   </ItemGroup>
 
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{E2C12345-ABCD-4F12-9999-1234567890AB}</ProjectGuid>
-    <Keyword>QtVS_v302</Keyword>
+    <ProjectGuid>{3B6F5B1E-1234-4ABC-9876-1234567890AB}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
     <RootNamespace>IPSharkk</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
 
-  <!-- Подключение Qt5.props -->
-  <Import Project="$(QTDIR)\msvc2019\lib\Qt5.props" Condition="Exists('$(QTDIR)\msvc2019\lib\Qt5.props')" />
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
 
-  <PropertyGroup Label="Configuration">
+  <!-- Конфигурации -->
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>v143</PlatformToolset>
-    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
 
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <ClCompile>
-      <PreprocessorDefinitions>UNICODE;WIN32;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(QTDIR)\include;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtWidgets;$(QTDIR)\include\QtNetwork;$(QTDIR)\include\QtXml;$(QTDIR)\include\QtWinExtras;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-    </ClCompile>
-    <Link>
-      <AdditionalLibraryDirectories>$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>Qt5Core.lib;Qt5Gui.lib;Qt5Widgets.lib;Qt5Network.lib;Qt5Xml.lib;Qt5WinExtras.lib;%(AdditionalDependencies)</AdditionalDependencies>
-    </Link>
-  </ItemDefinitionGroup>
+  <!-- Пути к Qt -->
+  <PropertyGroup>
+    <QtInstallDir>$(Qt5_Dir)</QtInstallDir>
+  </PropertyGroup>
 
-  <!-- cpp -->
+  <!-- Подключаем Qt props -->
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(QtInstallDir)\msvc2019\Qt.props" Condition="exists('$(QtInstallDir)\msvc2019\Qt.props')" />
+  </ImportGroup>
+
+  <!-- Исходники -->
   <ItemGroup>
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="mainwindow.cpp" />
-    <ClCompile Include="tooltip.cpp" />
-    <ClCompile Include="jsbridge.cpp" />
-    <ClCompile Include="settings.cpp" />
-    <ClCompile Include="systemproxy.cpp" />
-    <ClCompile Include="tuxlerapp.cpp" />
-    <ClCompile Include="messageqeue.cpp" />
-    <ClCompile Include="WebSocketClient.cpp" />
-    <ClCompile Include="newipengineconnector.cpp" />
-    <ClCompile Include="instancecommunication.cpp" />
+    <ClCompile Include="*.cpp" />
   </ItemGroup>
 
-  <!-- moc -->
   <ItemGroup>
-    <QtMoc Include="mainwindow.h" />
-    <QtMoc Include="tooltip.h" />
-    <QtMoc Include="jsbridge.h" />
-    <QtMoc Include="settings.h" />
-    <QtMoc Include="systemproxy.h" />
-    <QtMoc Include="tuxlerapp.h" />
-    <QtMoc Include="messageqeue.h" />
-    <QtMoc Include="WebSocketClient.h" />
-    <QtMoc Include="newipengineconnector.h" />
-    <QtMoc Include="instancecommunication.h" />
+    <ClInclude Include="*.h" />
   </ItemGroup>
 
-  <!-- ui -->
   <ItemGroup>
-    <QtUic Include="mainwindowIPSHARKK.ui" />
-    <QtUic Include="tooltipIPSHARKK.ui" />
+    <QtMoc Include="*.h" />
+    <QtUic Include="*.ui" />
+    <QtRcc Include="*.qrc" />
   </ItemGroup>
 
-  <!-- qrc -->
+  <!-- Ресурсы, иконки и т.п. -->
   <ItemGroup>
-    <QtRcc Include="resourcesIPSharkk.qrc" />
+    <Image Include="*.ico" />
+    <Image Include="*.png" />
   </ItemGroup>
 
-  <!-- подключение Qt5.targets -->
-  <Import Project="$(QTDIR)\msvc2019\lib\Qt5.targets" Condition="Exists('$(QTDIR)\msvc2019\lib\Qt5.targets')" />
+  <!-- Подключаем targets -->
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <Import Project="$(QtInstallDir)\msvc2019\Qt.targets" Condition="exists('$(QtInstallDir)\msvc2019\Qt.targets')" />
 
 </Project>
