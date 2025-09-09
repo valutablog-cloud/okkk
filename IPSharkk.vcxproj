@@ -1,6 +1,5 @@
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 
-  <!-- Подключаем базовые props -->
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
 
   <ItemGroup Label="ProjectConfigurations">
@@ -23,7 +22,6 @@
 
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
 
-  <!-- Конфигурации -->
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
@@ -44,7 +42,6 @@
     <QtInstallDir>$(Qt5_Dir)</QtInstallDir>
   </PropertyGroup>
 
-  <!-- Подключаем Qt props -->
   <ImportGroup Label="ExtensionSettings">
     <Import Project="$(QtInstallDir)\msvc2019\Qt.props" Condition="exists('$(QtInstallDir)\msvc2019\Qt.props')" />
   </ImportGroup>
@@ -52,25 +49,41 @@
   <!-- Исходники -->
   <ItemGroup>
     <ClCompile Include="*.cpp" />
+    <ClCompile Include="gui\**\*.cpp" />
+    <ClCompile Include="js\**\*.cpp" />
+    <ClCompile Include="IPSharkkResources\**\*.cpp" />
   </ItemGroup>
 
   <ItemGroup>
     <ClInclude Include="*.h" />
+    <ClInclude Include="gui\**\*.h" />
+    <ClInclude Include="js\**\*.h" />
+    <ClInclude Include="IPSharkkResources\**\*.h" />
   </ItemGroup>
 
+  <!-- Qt moc/uic/rcc -->
   <ItemGroup>
     <QtMoc Include="*.h" />
+    <QtMoc Include="gui\**\*.h" />
+    <QtMoc Include="js\**\*.h" />
+    <QtMoc Include="IPSharkkResources\**\*.h" />
+
     <QtUic Include="*.ui" />
+    <QtUic Include="gui\**\*.ui" />
+    <QtUic Include="IPSharkkResources\**\*.ui" />
+
     <QtRcc Include="*.qrc" />
+    <QtRcc Include="IPSharkkResources\**\*.qrc" />
   </ItemGroup>
 
-  <!-- Ресурсы, иконки и т.п. -->
+  <!-- Ресурсы -->
   <ItemGroup>
     <Image Include="*.ico" />
-    <Image Include="*.png" />
+    <Image Include="img\**\*.png" />
+    <Image Include="img\**\*.gif" />
+    <Image Include="flags\**\*.png" />
   </ItemGroup>
 
-  <!-- Подключаем targets -->
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <Import Project="$(QtInstallDir)\msvc2019\Qt.targets" Condition="exists('$(QtInstallDir)\msvc2019\Qt.targets')" />
 
