@@ -29,11 +29,14 @@
 
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
 
+  <!-- Debug/Release Win32/x64 configs -->
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
+    <OutDir>$(ProjectDir)Debug\</OutDir>
+    <IntDir>$(ProjectDir)Debug\obj\</IntDir>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
@@ -42,6 +45,8 @@
     <PlatformToolset>v143</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
+    <OutDir>$(ProjectDir)Release\</OutDir>
+    <IntDir>$(ProjectDir)Release\obj\</IntDir>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
@@ -49,6 +54,8 @@
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
+    <OutDir>$(ProjectDir)x64\Debug\</OutDir>
+    <IntDir>$(ProjectDir)x64\Debug\obj\</IntDir>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
@@ -57,6 +64,8 @@
     <PlatformToolset>v143</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
+    <OutDir>$(ProjectDir)x64\Release\</OutDir>
+    <IntDir>$(ProjectDir)x64\Release\obj\</IntDir>
   </PropertyGroup>
 
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
@@ -77,6 +86,7 @@
 
   <PropertyGroup Label="UserMacros" />
 
+  <!-- Sources -->
   <ItemGroup>
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="mainwindow.cpp" />
@@ -100,6 +110,7 @@
     <ClCompile Include="base64.cpp" />
   </ItemGroup>
 
+  <!-- Headers for MOC -->
   <ItemGroup>
     <QtMoc Include="mainwindow.h" />
     <QtMoc Include="tooltip.h" />
@@ -116,6 +127,7 @@
     <QtMoc Include="tuxlerapp.h" />
   </ItemGroup>
 
+  <!-- UI Forms -->
   <ItemGroup>
     <QtUic Include="mainwindow.ui" />
     <QtUic Include="mainwindowIPSHARKK.ui" />
@@ -123,11 +135,13 @@
     <QtUic Include="tooltipIPSHARKK.ui" />
   </ItemGroup>
 
+  <!-- Resources -->
   <ItemGroup>
     <QtRcc Include="resources.qrc" />
     <QtRcc Include="resourcesIPSharkk.qrc" />
   </ItemGroup>
 
+  <!-- Icons & Resources -->
   <ItemGroup>
     <ResourceCompile Include="AppInfo.rc" />
     <ResourceCompile Include="AppInfoIPSharkk.rc" />
