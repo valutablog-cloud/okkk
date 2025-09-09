@@ -29,14 +29,12 @@
 
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
 
-  <!-- Debug/Release Win32/x64 configs -->
+  <!-- Debug / Release configs -->
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
-    <OutDir>$(ProjectDir)Debug\</OutDir>
-    <IntDir>$(ProjectDir)Debug\obj\</IntDir>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
@@ -45,17 +43,13 @@
     <PlatformToolset>v143</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
-    <OutDir>$(SolutionDir)Release\</OutDir>
-    <IntDir>$(SolutionDir)Release\obj\$(ProjectName)\</IntDir>
-  </PropertyGroup>>
+  </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
-    <OutDir>$(ProjectDir)x64\Debug\</OutDir>
-    <IntDir>$(ProjectDir)x64\Debug\obj\</IntDir>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
@@ -64,8 +58,6 @@
     <PlatformToolset>v143</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
-    <OutDir>$(SolutionDir)Release\</OutDir>
-    <IntDir>$(SolutionDir)Release\obj\$(ProjectName)\</IntDir>
   </PropertyGroup>
 
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
@@ -110,7 +102,7 @@
     <ClCompile Include="base64.cpp" />
   </ItemGroup>
 
-  <!-- Headers for MOC -->
+  <!-- Headers -->
   <ItemGroup>
     <QtMoc Include="mainwindow.h" />
     <QtMoc Include="tooltip.h" />
@@ -127,7 +119,7 @@
     <QtMoc Include="tuxlerapp.h" />
   </ItemGroup>
 
-  <!-- UI Forms -->
+  <!-- UI -->
   <ItemGroup>
     <QtUic Include="mainwindow.ui" />
     <QtUic Include="mainwindowIPSHARKK.ui" />
@@ -141,12 +133,13 @@
     <QtRcc Include="resourcesIPSharkk.qrc" />
   </ItemGroup>
 
-  <!-- Icons & Resources -->
+  <!-- RC -->
   <ItemGroup>
     <ResourceCompile Include="AppInfo.rc" />
     <ResourceCompile Include="AppInfoIPSharkk.rc" />
   </ItemGroup>
 
+  <!-- Icons -->
   <ItemGroup>
     <Image Include="ico.ico" />
     <Image Include="icoIPSharkk.ico" />
@@ -154,8 +147,9 @@
 
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets" />
+
+  <!-- Qt -->
   <Import Project="$(QtMsBuild)\Qt.props" />
   <Import Project="$(QtMsBuild)\Qt.targets" />
 
 </Project>
-
