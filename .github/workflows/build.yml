@@ -33,14 +33,20 @@ jobs:
           mkdir "$env:Qt5_Dir\msbuild"
           Copy-Item "vstools_src\QtMsBuild\*" "$env:Qt5_Dir\msbuild\" -Recurse -Force
 
+      - name: Build QtMsBuild
+        run: |
+          msbuild vstools_src\QtMSBuild\QtMSBuild.csproj /p:Configuration=Release
+          Copy-Item "vstools_src\QtMSBuild\bin\Release\*" "$env:Qt5_Dir\msbuild\" -Recurse -Force
+
           echo "=== Содержимое QtMsBuild из репозитория ==="
-          dir "vstools_src\QtMsBuild"
+          dir "vstools_src\QtMSBuild"
 
           echo "=== Проверяем, что Qt.props скопировался в msbuild ==="
           dir "$env:Qt5_Dir\msbuild"
 
           echo "=== Покажем первые строки Qt.props ==="
           Get-Content "$env:Qt5_Dir\msbuild\Qt.props" -TotalCount 30
+
           
           mkdir "$env:Qt5_Dir\msbuild"
           Copy-Item "vstools_src\QtMsBuild\*" "$env:Qt5_Dir\msbuild\" -Recurse -Force
