@@ -1,4 +1,4 @@
-name: Build VPN Clients (Win64)
+name: Build VPN Clients (Win32)
 
 on:
   push:
@@ -14,15 +14,14 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Install Qt 5.15.2 (x64)
+      - name: Install Qt 5.15.2
         uses: jurplel/install-qt-action@v3
         with:
           version: '5.15.2'
-          host: windows
-          target: desktop
-          arch: win64_msvc2019_64
+          arch: win32_msvc2019
 
       - name: Add Qt bin to PATH (persist)
+        shell: pwsh
         run: |
           echo "QTDIR=$env:Qt5_Dir" >> $env:GITHUB_ENV
           echo "$env:Qt5_Dir\bin" >> $env:GITHUB_PATH
@@ -31,26 +30,36 @@ jobs:
         run: qmake -v
 
       - name: Set QtMsBuild env
+        shell: pwsh
         run: echo "QtMsBuild=$env:Qt5_Dir\msbuild" >> $env:GITHUB_ENV
 
       - name: Setup MSBuild
         uses: microsoft/setup-msbuild@v2
 
-      - name: Build IPSharkk (x64)
-        run: msbuild IPSharkk.sln /p:Configuration=Release /p:Platform=x64 /verbosity:minimal
+      - name: Build IPSharkk (Win32 Release)
+        run: msbuild IPSharkk.sln /p:Configuration=Release /p:Platform=Win32 /verbosity:detailed > build.log
 
-      - name: List build outputs
+      - name: Show build log (last 200 lines)
+        shell: pwsh
+        run: Get-Content build.log -Tail 200
+
+      - name: Show all files after build
         shell: pwsh
         run: |
-          echo "Looking for EXE files..."
-          Get-ChildItem -Recurse -Include *.exe | ForEach-Object { $_.FullName }
+          echo "All files under workspace:"
+          Get-ChildItem -Path D:\a\okkk\okkk -Recurse | ForEach-Object { $_.FullName }
 
-
+      - name: Upload build log
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-log
+          path: build.log
 
       - name: Upload EXE artifacts
         uses: actions/upload-artifact@v4
         with:
           name: VPNClients
           path: |
+            **/Release/*.exe
             **/Win32/Release/*.exe
             **/x64/Release/*.exe
