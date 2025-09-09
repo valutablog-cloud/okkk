@@ -22,12 +22,14 @@ jobs:
 
       - name: Add Qt bin to PATH (persist)
         run: |
-          echo "QTDIR=$env:IQTA_TOOLS" >> $env:GITHUB_ENV
-          echo "$env:IQTA_TOOLS\bin" >> $env:GITHUB_PATH
-          setx PATH "$env:IQTA_TOOLS\bin;$env:PATH"
+          echo "QTDIR=$env:Qt5_Dir" >> $env:GITHUB_ENV
+          echo "$env:Qt5_Dir\bin" >> $env:GITHUB_PATH
 
       - name: Verify Qt tools
-        run: echo "Qt installed"
+        run: qmake -v
+
+      - name: Set QtMsBuild env
+        run: echo "QtMsBuild=$env:Qt5_Dir\msbuild" >> $env:GITHUB_ENV
 
       - name: Setup MSBuild
         uses: microsoft/setup-msbuild@v2
