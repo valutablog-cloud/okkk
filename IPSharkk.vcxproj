@@ -1,73 +1,69 @@
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 
   <ItemGroup Label="ProjectConfigurations">
-    <ProjectConfiguration Include="Debug|Win32">
-      <Configuration>Debug</Configuration>
-      <Platform>Win32</Platform>
-    </ProjectConfiguration>
     <ProjectConfiguration Include="Release|Win32">
       <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
       <Platform>Win32</Platform>
     </ProjectConfiguration>
   </ItemGroup>
 
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{8E2C9E43-9F3E-4E7F-9B27-AB77E8D3F2A1}</ProjectGuid>
+    <ProjectGuid>{PUT-YOUR-GUID-HERE}</ProjectGuid>
+    <Keyword>QtVS_v302</Keyword>
     <RootNamespace>IPSharkk</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
 
-  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <!-- Подключение Qt5.props -->
+  <Import Project="$(QTDIR)\msvc2019\lib\Qt5.props" Condition="Exists('$(QTDIR)\msvc2019\lib\Qt5.props')" />
 
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+  <PropertyGroup Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>v143</PlatformToolset>
-    <UseOfMfc>false</UseOfMfc>
-    <CharacterSet>MultiByte</CharacterSet>
-    <OutDir>debug\</OutDir>
-    <IntDir>debug\</IntDir>
+    <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
 
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
-    <PlatformToolset>v143</PlatformToolset>
-    <UseOfMfc>false</UseOfMfc>
-    <CharacterSet>MultiByte</CharacterSet>
-    <WholeProgramOptimization>true</WholeProgramOptimization>
-    <OutDir>release\</OutDir>
-    <IntDir>release\</IntDir>
-  </PropertyGroup>
-
-  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
-
-  <!-- Include Qt headers -->
-  <ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>$(QTDIR)\include;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtWidgets;$(QTDIR)\include\QtNetwork;$(QTDIR)\include\QtXml;$(QTDIR)\include\QtWebSockets;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>UNICODE;WIN32;_WINDOWS;QT_DLL;QT_CORE_LIB;QT_GUI_LIB;QT_WIDGETS_LIB;QT_NETWORK_LIB;QT_XML_LIB;QT_WEBSOCKETS_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>UNICODE;WIN32;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(QTDIR)\include;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtWidgets;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <AdditionalLibraryDirectories>$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>Qt5Core.lib;Qt5Gui.lib;Qt5Widgets.lib;Qt5Network.lib;Qt5Xml.lib;Qt5WebSockets.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>Qt5Core.lib;Qt5Gui.lib;Qt5Widgets.lib;Qt5Network.lib;Qt5Xml.lib;Qt5WinExtras.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
 
-  <!-- Custom build for moc, uic, rcc -->
+  <!-- Исходники -->
   <ItemGroup>
-    <CustomBuild Include="*.h">
-      <Command>"$(QTDIR)\bin\moc.exe" %(FullPath) -o %(Filename).moc.cpp</Command>
-      <Outputs>%(Filename).moc.cpp</Outputs>
-    </CustomBuild>
-    <CustomBuild Include="*.ui">
-      <Command>"$(QTDIR)\bin\uic.exe" %(FullPath) -o ui_%(Filename).h</Command>
-      <Outputs>ui_%(Filename).h</Outputs>
-    </CustomBuild>
-    <CustomBuild Include="*.qrc">
-      <Command>"$(QTDIR)\bin\rcc.exe" %(FullPath) -o qrc_%(Filename).cpp</Command>
-      <Outputs>qrc_%(Filename).cpp</Outputs>
-    </CustomBuild>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="mainwindow.cpp" />
+    <ClCompile Include="tooltip.cpp" />
+    <!-- и т.д. -->
   </ItemGroup>
 
-  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ItemGroup>
+    <QtMoc Include="mainwindow.h" />
+    <QtMoc Include="tooltip.h" />
+    <QtMoc Include="jsbridge.h" />
+    <!-- и т.д. -->
+  </ItemGroup>
+
+  <ItemGroup>
+    <QtUic Include="mainwindowIPSHARKK.ui" />
+    <QtUic Include="tooltipIPSHARKK.ui" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <QtRcc Include="resourcesIPSharkk.qrc" />
+  </ItemGroup>
+
+  <!-- Подключение Qt5.targets -->
+  <Import Project="$(QTDIR)\msvc2019\lib\Qt5.targets" Condition="Exists('$(QTDIR)\msvc2019\lib\Qt5.targets')" />
 
 </Project>
