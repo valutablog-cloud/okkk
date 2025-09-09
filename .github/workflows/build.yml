@@ -41,6 +41,12 @@ jobs:
 
       - name: Build TuxlerProxy (x64)
         run: msbuild TuxlerProxy.sln /p:Configuration=Release /p:Platform=x64 /verbosity:minimal
+      - name: List build output
+        run: |
+          echo "Contents of Release folder:"
+          dir Release || echo "No Release folder"
+          echo "Contents of x64/Release folder:"
+          dir x64\Release || echo "No x64/Release folder"
 
       - name: Upload EXE artifacts
         uses: actions/upload-artifact@v4
