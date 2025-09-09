@@ -12,7 +12,7 @@
   </ItemGroup>
 
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{PUT-YOUR-GUID-HERE}</ProjectGuid>
+    <ProjectGuid>{E2C12345-ABCD-4F12-9999-1234567890AB}</ProjectGuid>
     <Keyword>QtVS_v302</Keyword>
     <RootNamespace>IPSharkk</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
@@ -31,7 +31,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
       <PreprocessorDefinitions>UNICODE;WIN32;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(QTDIR)\include;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtWidgets;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(QTDIR)\include;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtWidgets;$(QTDIR)\include\QtNetwork;$(QTDIR)\include\QtXml;$(QTDIR)\include\QtWinExtras;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <AdditionalLibraryDirectories>$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
@@ -39,31 +39,47 @@
     </Link>
   </ItemDefinitionGroup>
 
-  <!-- Исходники -->
+  <!-- cpp -->
   <ItemGroup>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="mainwindow.cpp" />
     <ClCompile Include="tooltip.cpp" />
-    <!-- и т.д. -->
+    <ClCompile Include="jsbridge.cpp" />
+    <ClCompile Include="settings.cpp" />
+    <ClCompile Include="systemproxy.cpp" />
+    <ClCompile Include="tuxlerapp.cpp" />
+    <ClCompile Include="messageqeue.cpp" />
+    <ClCompile Include="WebSocketClient.cpp" />
+    <ClCompile Include="newipengineconnector.cpp" />
+    <ClCompile Include="instancecommunication.cpp" />
   </ItemGroup>
 
+  <!-- moc -->
   <ItemGroup>
     <QtMoc Include="mainwindow.h" />
     <QtMoc Include="tooltip.h" />
     <QtMoc Include="jsbridge.h" />
-    <!-- и т.д. -->
+    <QtMoc Include="settings.h" />
+    <QtMoc Include="systemproxy.h" />
+    <QtMoc Include="tuxlerapp.h" />
+    <QtMoc Include="messageqeue.h" />
+    <QtMoc Include="WebSocketClient.h" />
+    <QtMoc Include="newipengineconnector.h" />
+    <QtMoc Include="instancecommunication.h" />
   </ItemGroup>
 
+  <!-- ui -->
   <ItemGroup>
     <QtUic Include="mainwindowIPSHARKK.ui" />
     <QtUic Include="tooltipIPSHARKK.ui" />
   </ItemGroup>
 
+  <!-- qrc -->
   <ItemGroup>
     <QtRcc Include="resourcesIPSharkk.qrc" />
   </ItemGroup>
 
-  <!-- Подключение Qt5.targets -->
+  <!-- подключение Qt5.targets -->
   <Import Project="$(QTDIR)\msvc2019\lib\Qt5.targets" Condition="Exists('$(QTDIR)\msvc2019\lib\Qt5.targets')" />
 
 </Project>
