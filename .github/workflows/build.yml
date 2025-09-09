@@ -2,9 +2,7 @@ name: Build VPN Clients (Win32)
 
 on:
   push:
-    branches:
-      - main
-  pull_request:
+    branches: [ "main" ]
   workflow_dispatch:
 
 jobs:
@@ -15,13 +13,12 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Install Qt
+      - name: Install Qt 5.15.2
         uses: jurplel/install-qt-action@v3
         with:
-          version: 5.15.2
-          host: windows
-          target: desktop
-          arch: win32_msvc2019
+          version: '5.15.2'
+          host: 'windows'
+          arch: 'win32_msvc2019'
 
       - name: Setup MSBuild
         uses: microsoft/setup-msbuild@v2
