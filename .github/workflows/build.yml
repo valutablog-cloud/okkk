@@ -10,9 +10,30 @@ jobs:
   build:
     runs-on: windows-latest
 
+name: Build VPN Clients (Win32)
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+  workflow_dispatch:   # позволяет запускать вручную
+
+jobs:
+  build:
+    runs-on: windows-latest
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+
+      - name: Retarget IPSharkk to Windows 10 SDK
+        run: |
+          sed -i 's#<WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>#<WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>#' IPSharkk.vcxproj
+
+      - name: Retarget TuxlerProxy to Windows 10 SDK
+        run: |
+          sed -i 's#<WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>#<WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>#' TuxlerProxy.vcxproj
 
       - name: Setup MSBuild
         uses: microsoft/setup-msbuild@v2
@@ -28,6 +49,5 @@ jobs:
         with:
           name: VPNClients
           path: |
-            1111111/Release/*.exe
-            1111111/x86/Release/*.exe
-
+            Release/*.exe
+            x86/Release/*.exe
