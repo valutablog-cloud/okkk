@@ -1,0 +1,159 @@
+
+html {
+
+  height: 100%;
+
+}
+
+.bodyfree {
+
+        background: -webkit-linear-gradient(left, #0E33CD, #646FF2,  #0E33CD);
+        background-image:url('qrc:/images/FreeVersion.png'), url('qrc:/images/background.png');
+        background-size: auto, 100% 100%;
+        background-position: 50% 60%, center center;
+        background-repeat:no-repeat;
+}
+
+.bodypremium {
+
+        background: -webkit-linear-gradient(left, #0E33CD, #646FF2,  #0E33CD);
+        background-image:url('qrc:/images/PremiumVersion.png'), url('qrc:/images/background.png');
+        -webkit-background-size: auto, cover;
+        background-position: 50% 60%, center center;
+        background-repeat:no-repeat;
+}
+
+.bodysettings {
+
+        background: -webkit-linear-gradient(left, #0E33CD, #646FF2,  #0E33CD);
+        background-image: url('qrc:/images/background.png');
+        -webkit-background-size: cover;
+        background-position: center center;
+        background-repeat:no-repeat;
+}
+
+span, td, th{
+
+    cursor:default;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.onoffswitch {
+position: absolute;
+right: 20px;
+top: -webkit-calc(50% - 0px);
+
+width: 90px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+    display: none;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid #666666; border-radius: 5px;
+}
+.onoffswitch-inner {
+    width: 200%; margin-left: -100%;
+    -moz-transition: margin 0.3s ease-in 0s; -webkit-transition: margin 0.3s ease-in 0s;
+    -o-transition: margin 0.3s ease-in 0s; transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    float: left; width: 50%; height: 24px; padding: 0; line-height: 24px;
+    font-size: 16px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+    content: "";
+    padding-left: 10px;
+    background-color: #B6B8BA; color: #FFFFFF;
+}
+.onoffswitch-inner:after {
+    content: "";
+    padding-right: 10px;
+    background-color: #F8F8F8; color: #666666;
+    text-align: right;
+}
+.onoffswitch-switch {
+    width: 43px; margin: 0px;
+    background: #FFFFFF;
+    border: 2px solid #666666; border-radius: 5px;
+    position: absolute; top: 0; bottom: 0; right: 43px;
+    -moz-transition: all 0.3s ease-in 0s; -webkit-transition: all 0.3s ease-in 0s;
+    -o-transition: all 0.3s ease-in 0s; transition: all 0.3s ease-in 0s;
+    background-image: -moz-linear-gradient(center top, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0) 100%);
+    background-image: -webkit-linear-gradient(center top, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0) 100%);
+    background-image: -o-linear-gradient(center top, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0) 100%);
+    background-image: linear-gradient(center top, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0) 100%);
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px;
+}
+
+.mycss
+{
+
+text-shadow:1px 1px 0 rgba(225,232,209,1);
+color:#2E2E2E;
+letter-spacing:1pt;
+word-spacing:1pt;
+font-size:16px;
+text-align:left;
+font-family:courier new, courier, monospace;
+}
+
+#container{
+
+        position: fixed;
+        bottom: 10px;
+        width: -webkit-calc(100% - 17px);
+        height: -webkit-calc(100% - 120px);
+}
+
+#settings{
+
+        position: absolute;
+        right: 2px;
+        bottom: 2px;
+        border:0;
+}
+
+#boxip{
+
+background-image: -webkit-gradient(
+        linear,
+        right bottom,
+        right top,
+        color-stop(0.25, #FFFFFF),
+        color-stop(0.74, #D6D6D6)
+);
+        background-image: -o-linear-gradient(top, #FFFFFF 25%, #D6D6D6 74%);
+        background-image: -moz-linear-gradient(top, #FFFFFF 25%, #D6D6D6 74%);
+        background-image: -webkit-linear-gradient(top, #FFFFFF 25%, #D6D6D6 74%);
+        background-image: -ms-linear-gradient(top, #FFFFFF 25%, #D6D6D6 74%);
+        background-image: linear-gradient(to top, #FFFFFF 25%, #D6D6D6 74%);
+        height: 90px;
+        position: relative;
+        top: 0px;
+        width: -webkit-calc(100%);
+        border-radius: 7px;
+}
+
+#iplocbox{
+
+    position: absolute;
+    left: 10px;
+    width:70%;
+    height: 70px;
+    top: -webkit-calc(50% - 40px);
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+
