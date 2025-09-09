@@ -35,6 +35,9 @@ jobs:
           echo "Contents of msbuild folder:"
           dir "$env:Qt5_Dir\msbuild"
 
+      # --- Устанавливаем переменную QtMsBuild ---
+      - name: Set QtMsBuild path
+        run: echo "QtMsBuild=$env:Qt5_Dir\msbuild" >> $env:GITHUB_ENV
 
       - name: Setup MSBuild
         uses: microsoft/setup-msbuild@v2
@@ -45,7 +48,7 @@ jobs:
 
       # --- Билдим x64 ---
       - name: Build IPSharkk (x64)
-        run: msbuild IPSharkk.sln /p:Configuration=Release /p:Platform=x64 /verbosity:minimal
+        run: msbuild IPSharkk.sln /p:Configuration=Release /p:Platform=x64 /verbosity=minimal
 
       # --- Выгружаем exe ---
       - name: Upload EXE artifacts
