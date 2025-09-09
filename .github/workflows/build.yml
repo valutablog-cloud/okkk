@@ -39,13 +39,12 @@ jobs:
       - name: Build IPSharkk (x64)
         run: msbuild IPSharkk.sln /p:Configuration=Release /p:Platform=x64 /verbosity:minimal
 
-      - name: Upload EXE artifacts
-        uses: actions/upload-artifact@v4
-        with:
-          name: VPNClients
-          path: |
-            **/Win32/Release/*.exe
-            **/x64/Release/*.exe
+      - name: List build outputs
+        shell: pwsh
+        run: |
+          echo "Looking for EXE files..."
+          Get-ChildItem -Recurse -Include *.exe | ForEach-Object { $_.FullName }
+
 
 
       - name: Upload EXE artifacts
