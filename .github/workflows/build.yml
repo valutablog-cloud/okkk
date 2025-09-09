@@ -1,4 +1,4 @@
-name: Build VPN Clients (Win32)
+name: Build VPN Clients (Win32 + x64)
 
 on:
   push:
@@ -20,14 +20,13 @@ jobs:
           version: '5.15.2'
           arch: win32_msvc2019
 
-      - name: Add Qt bin to PATH (persist)
-        run: |
-          echo "QTDIR=$env:Qt5_Dir" >> $env:GITHUB_ENV
-          echo "$env:Qt5_Dir\bin" >> $env:GITHUB_PATH
+      - name: Install Qt 5.15.2 x64
+        uses: jurplel/install-qt-action@v3
+        with:
+          version: '5.15.2'
+          arch: win64_msvc2019_64
 
-      - name: Verify Qt install
-        run: qmake -v
-
+      # --- Добавляем QtMsBuild ---
       - name: Download QtMsBuild
         run: |
           git clone --depth=1 https://github.com/qt-labs/vstools.git
@@ -40,18 +39,22 @@ jobs:
       - name: Set QtMsBuild env
         run: echo "QtMsBuild=$env:Qt5_Dir\msvc2019\msbuild" >> $env:GITHUB_ENV
 
-      - name: Set QtMsBuild env
-        run: echo "QtMsBuild=$env:Qt5_Dir\msbuild" >> $env:GITHUB_ENV
-
       - name: Setup MSBuild
         uses: microsoft/setup-msbuild@v2
 
-      - name: Build IPSharkk (x86)
+      # --- Билдим Win32 ---
+      - name: Build IPSharkk (Win32)
         run: msbuild IPSharkk.sln /p:Configuration=Release /p:Platform=Win32 /verbosity:minimal
 
+      # --- Билдим x64 ---
+      - name: Build IPSharkk (x64)
+        run: msbuild IPSharkk.sln /p:Configuration=Release /p:Platform=x64 /verbosity:minimal
+
+      # --- Выгружаем exe ---
       - name: Upload EXE artifacts
         uses: actions/upload-artifact@v4
         with:
           name: VPNClients
           path: |
             **/Win32/Release/*.exe
+            **/x64/Release/*.exe
