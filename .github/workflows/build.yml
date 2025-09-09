@@ -18,10 +18,10 @@ jobs:
         uses: microsoft/setup-msbuild@v2
 
       - name: Build IPSharkk (x86)
-        run: msbuild 1111111/IPSharkk.sln /p:Configuration=Release /p:Platform=Win32
+        run: msbuild IPSharkk.sln /p:Configuration=Release /p:Platform=Win32
 
       - name: Build TuxlerProxy (x86)
-        run: msbuild 1111111/TuxlerProxy.sln /p:Configuration=Release /p:Platform=Win32
+        run: msbuild TuxlerProxy.sln /p:Configuration=Release /p:Platform=Win32
 
       - name: Upload EXE artifacts
         uses: actions/upload-artifact@v4
