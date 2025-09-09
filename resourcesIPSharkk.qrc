@@ -1,0 +1,371 @@
+<RCC>
+    <qresource prefix="/images/flags">
+        <file>flags/AD.png</file>
+        <file>flags/LU.png</file>
+        <file>flags/AE.png</file>
+        <file>flags/LV.png</file>
+        <file>flags/AF.png</file>
+        <file>flags/LY.png</file>
+        <file>flags/AG.png</file>
+        <file>flags/MA.png</file>
+        <file>flags/AI.png</file>
+        <file>flags/MC.png</file>
+        <file>flags/AL.png</file>
+        <file>flags/MD.png</file>
+        <file>flags/AM.png</file>
+        <file>flags/ME.png</file>
+        <file>flags/AN.png</file>
+        <file>flags/MF.png</file>
+        <file>flags/AO.png</file>
+        <file>flags/MG.png</file>
+        <file>flags/AQ.png</file>
+        <file>flags/MH.png</file>
+        <file>flags/AR.png</file>
+        <file>flags/MK.png</file>
+        <file>flags/AS.png</file>
+        <file>flags/ML.png</file>
+        <file>flags/AT.png</file>
+        <file>flags/MM.png</file>
+        <file>flags/AU.png</file>
+        <file>flags/MN.png</file>
+        <file>flags/AW.png</file>
+        <file>flags/MO.png</file>
+        <file>flags/AX.png</file>
+        <file>flags/MP.png</file>
+        <file>flags/AZ.png</file>
+        <file>flags/MQ.png</file>
+        <file>flags/BA.png</file>
+        <file>flags/MR.png</file>
+        <file>flags/BB.png</file>
+        <file>flags/MS.png</file>
+        <file>flags/BD.png</file>
+        <file>flags/MT.png</file>
+        <file>flags/BE.png</file>
+        <file>flags/MU.png</file>
+        <file>flags/BF.png</file>
+        <file>flags/MV.png</file>
+        <file>flags/BG.png</file>
+        <file>flags/MW.png</file>
+        <file>flags/BH.png</file>
+        <file>flags/MX.png</file>
+        <file>flags/BI.png</file>
+        <file>flags/MY.png</file>
+        <file>flags/BJ.png</file>
+        <file>flags/MZ.png</file>
+        <file>flags/BL.png</file>
+        <file>flags/NA.png</file>
+        <file>flags/BM.png</file>
+        <file>flags/NC.png</file>
+        <file>flags/BN.png</file>
+        <file>flags/NE.png</file>
+        <file>flags/BO.png</file>
+        <file>flags/NF.png</file>
+        <file>flags/BR.png</file>
+        <file>flags/NG.png</file>
+        <file>flags/BS.png</file>
+        <file>flags/NI.png</file>
+        <file>flags/BT.png</file>
+        <file>flags/NL.png</file>
+        <file>flags/BW.png</file>
+        <file>flags/NO.png</file>
+        <file>flags/BY.png</file>
+        <file>flags/NP.png</file>
+        <file>flags/BZ.png</file>
+        <file>flags/NR.png</file>
+        <file>flags/CA.png</file>
+        <file>flags/NU.png</file>
+        <file>flags/CC.png</file>
+        <file>flags/NZ.png</file>
+        <file>flags/CD.png</file>
+        <file>flags/OM.png</file>
+        <file>flags/CF.png</file>
+        <file>flags/PA.png</file>
+        <file>flags/CG.png</file>
+        <file>flags/PE.png</file>
+        <file>flags/CH.png</file>
+        <file>flags/PF.png</file>
+        <file>flags/CI.png</file>
+        <file>flags/PG.png</file>
+        <file>flags/CK.png</file>
+        <file>flags/PH.png</file>
+        <file>flags/CL.png</file>
+        <file>flags/PK.png</file>
+        <file>flags/CM.png</file>
+        <file>flags/PL.png</file>
+        <file>flags/CN.png</file>
+        <file>flags/PM.png</file>
+        <file>flags/CO.png</file>
+        <file>flags/PN.png</file>
+        <file>flags/CR.png</file>
+        <file>flags/PR.png</file>
+        <file>flags/CU.png</file>
+        <file>flags/PS.png</file>
+        <file>flags/CV.png</file>
+        <file>flags/PT.png</file>
+        <file>flags/CW.png</file>
+        <file>flags/PW.png</file>
+        <file>flags/CX.png</file>
+        <file>flags/PY.png</file>
+        <file>flags/CY.png</file>
+        <file>flags/QA.png</file>
+        <file>flags/CZ.png</file>
+        <file>flags/RO.png</file>
+        <file>flags/DE.png</file>
+        <file>flags/RS.png</file>
+        <file>flags/DJ.png</file>
+        <file>flags/RU.png</file>
+        <file>flags/DK.png</file>
+        <file>flags/RW.png</file>
+        <file>flags/DM.png</file>
+        <file>flags/SA.png</file>
+        <file>flags/DO.png</file>
+        <file>flags/SB.png</file>
+        <file>flags/DZ.png</file>
+        <file>flags/SC.png</file>
+        <file>flags/EC.png</file>
+        <file>flags/SD.png</file>
+        <file>flags/EE.png</file>
+        <file>flags/SE.png</file>
+        <file>flags/EG.png</file>
+        <file>flags/SG.png</file>
+        <file>flags/EH.png</file>
+        <file>flags/SH.png</file>
+        <file>flags/ER.png</file>
+        <file>flags/SI.png</file>
+        <file>flags/ES.png</file>
+        <file>flags/SK.png</file>
+        <file>flags/ET.png</file>
+        <file>flags/SL.png</file>
+        <file>flags/EU.png</file>
+        <file>flags/SM.png</file>
+        <file>flags/FI.png</file>
+        <file>flags/SN.png</file>
+        <file>flags/FJ.png</file>
+        <file>flags/SO.png</file>
+        <file>flags/FK.png</file>
+        <file>flags/SR.png</file>
+        <file>flags/FM.png</file>
+        <file>flags/SS.png</file>
+        <file>flags/FO.png</file>
+        <file>flags/ST.png</file>
+        <file>flags/FR.png</file>
+        <file>flags/SV.png</file>
+        <file>flags/GA.png</file>
+        <file>flags/SY.png</file>
+        <file>flags/GB.png</file>
+        <file>flags/SZ.png</file>
+        <file>flags/GD.png</file>
+        <file>flags/TC.png</file>
+        <file>flags/GE.png</file>
+        <file>flags/TD.png</file>
+        <file>flags/GG.png</file>
+        <file>flags/TF.png</file>
+        <file>flags/GH.png</file>
+        <file>flags/TG.png</file>
+        <file>flags/GI.png</file>
+        <file>flags/TH.png</file>
+        <file>flags/GL.png</file>
+        <file>flags/TJ.png</file>
+        <file>flags/GM.png</file>
+        <file>flags/TK.png</file>
+        <file>flags/GN.png</file>
+        <file>flags/TL.png</file>
+        <file>flags/GQ.png</file>
+        <file>flags/TM.png</file>
+        <file>flags/GR.png</file>
+        <file>flags/TN.png</file>
+        <file>flags/GS.png</file>
+        <file>flags/TO.png</file>
+        <file>flags/GT.png</file>
+        <file>flags/TR.png</file>
+        <file>flags/GU.png</file>
+        <file>flags/TT.png</file>
+        <file>flags/GW.png</file>
+        <file>flags/TV.png</file>
+        <file>flags/GY.png</file>
+        <file>flags/TW.png</file>
+        <file>flags/HK.png</file>
+        <file>flags/TZ.png</file>
+        <file>flags/HN.png</file>
+        <file>flags/UA.png</file>
+        <file>flags/HR.png</file>
+        <file>flags/UG.png</file>
+        <file>flags/HT.png</file>
+        <file>flags/US.png</file>
+        <file>flags/HU.png</file>
+        <file>flags/UY.png</file>
+        <file>flags/IC.png</file>
+        <file>flags/UZ.png</file>
+        <file>flags/ID.png</file>
+        <file>flags/VA.png</file>
+        <file>flags/IE.png</file>
+        <file>flags/VC.png</file>
+        <file>flags/IL.png</file>
+        <file>flags/VE.png</file>
+        <file>flags/IM.png</file>
+        <file>flags/VG.png</file>
+        <file>flags/IN.png</file>
+        <file>flags/VI.png</file>
+        <file>flags/IO.png</file>
+        <file>flags/VN.png</file>
+        <file>flags/IQ.png</file>
+        <file>flags/VU.png</file>
+        <file>flags/IR.png</file>
+        <file>flags/WF.png</file>
+        <file>flags/IS.png</file>
+        <file>flags/WS.png</file>
+        <file>flags/IT.png</file>
+        <file>flags/YE.png</file>
+        <file>flags/JE.png</file>
+        <file>flags/YT.png</file>
+        <file>flags/JM.png</file>
+        <file>flags/ZA.png</file>
+        <file>flags/JO.png</file>
+        <file>flags/ZM.png</file>
+        <file>flags/JP.png</file>
+        <file>flags/ZW.png</file>
+        <file>flags/KE.png</file>
+        <file>flags/_abkhazia.png</file>
+        <file>flags/KG.png</file>
+        <file>flags/_basque-country.png</file>
+        <file>flags/KH.png</file>
+        <file>flags/_british-antarctic-territory.png</file>
+        <file>flags/KI.png</file>
+        <file>flags/_commonwealth.png</file>
+        <file>flags/KM.png</file>
+        <file>flags/_england.png</file>
+        <file>flags/KN.png</file>
+        <file>flags/_gosquared.png</file>
+        <file>flags/KP.png</file>
+        <file>flags/_kosovo.png</file>
+        <file>flags/KR.png</file>
+        <file>flags/_mars.png</file>
+        <file>flags/KW.png</file>
+        <file>flags/_nagorno-karabakh.png</file>
+        <file>flags/KY.png</file>
+        <file>flags/_nato.png</file>
+        <file>flags/KZ.png</file>
+        <file>flags/_northern-cyprus.png</file>
+        <file>flags/LA.png</file>
+        <file>flags/_olympics.png</file>
+        <file>flags/LB.png</file>
+        <file>flags/_red-cross.png</file>
+        <file>flags/LC.png</file>
+        <file>flags/_scotland.png</file>
+        <file>flags/LI.png</file>
+        <file>flags/_somaliland.png</file>
+        <file>flags/LK.png</file>
+        <file>flags/_south-ossetia.png</file>
+        <file>flags/LR.png</file>
+        <file>flags/_united-nations.png</file>
+        <file>flags/LS.png</file>
+        <file>flags/_unknown.png</file>
+        <file>flags/LT.png</file>
+        <file>flags/_wales.png</file>
+    </qresource>
+    <qresource prefix="/images">
+        <file alias="app_logo.png">IPSharkkResources/app_logo.png</file>
+        <file alias="background.png">IPSharkkResources/background.png</file>
+        <file alias="TuxlerLogo160.png">IPSharkkResources/TuxlerLogo160.png</file>
+        <file alias="icon_16x16.png">IPSharkkResources/icon_16x16.png</file>
+        <file alias="TuxlerLogo320.png">IPSharkkResources/TuxlerLogo320.png</file>
+        <file alias="icon_32x32.png">IPSharkkResources/icon_32x32.png</file>
+        <file alias="icon_128x128.png">IPSharkkResources/icon_128x128.png</file>
+        <file alias="icon_256x256.png">IPSharkkResources/icon_256x256.png</file>
+        <file alias="icon_512x512.png">IPSharkkResources/icon_512x512.png</file>
+        <file alias="FguQn.png">IPSharkkResources/FguQn.png</file>
+        <file alias="aKKDY.png">IPSharkkResources/aKKDY.png</file>
+        <file alias="NQ2K6.png">IPSharkkResources/NQ2K6.png</file>
+        <file alias="8xDbU.png">IPSharkkResources/8xDbU.png</file>
+        <file alias="p9yMk.png">IPSharkkResources/p9yMk.png</file>
+        <file alias="YQRD7.png">IPSharkkResources/YQRD7.png</file>
+        <file alias="dGOKL.png">IPSharkkResources/dGOKL.png</file>
+        <file alias="gT5BM.png">IPSharkkResources/gT5BM.png</file>
+        <file alias="RDf8L.png">IPSharkkResources/RDf8L.png</file>
+        <file alias="5rJr5.png">IPSharkkResources/5rJr5.png</file>
+        <file alias="NdaTT.png">IPSharkkResources/NdaTT.png</file>
+        <file alias="p7j9a.png">IPSharkkResources/p7j9a.png</file>
+        <file alias="Rb6ru.png">IPSharkkResources/Rb6ru.png</file>
+        <file alias="rPEsZ.png">IPSharkkResources/rPEsZ.png</file>
+        <file alias="KQvwk.png">IPSharkkResources/KQvwk.png</file>
+        <file alias="puDsH.png">IPSharkkResources/puDsH.png</file>
+        <file alias="UjkVR.png">IPSharkkResources/UjkVR.png</file>
+        <file alias="uW3TL.png">IPSharkkResources/uW3TL.png</file>
+        <file alias="FreeVersion.png">IPSharkkResources/FreeVersion.png</file>
+        <file alias="PremiumVersion.png">IPSharkkResources/PremiumVersion.png</file>
+        <file alias="tbl_head_bg.png">IPSharkkResources/tbl_head_bg.png</file>
+        <file alias="button_menu.png">IPSharkkResources/button_menu.png</file>
+        <file alias="flag_fr.ico">IPSharkkResources/flag_fr.ico</file>
+        <file alias="close.png">IPSharkkResources/close.png</file>
+        <file alias="closec.png">IPSharkkResources/closec.png</file>
+        <file alias="closeh.png">IPSharkkResources/closeh.png</file>
+        <file alias="maximize.png">IPSharkkResources/maximize.png</file>
+        <file alias="maximizec.png">IPSharkkResources/maximizec.png</file>
+        <file alias="maximizeh.png">IPSharkkResources/maximizeh.png</file>
+        <file alias="minimize.png">IPSharkkResources/minimize.png</file>
+        <file alias="minimizec.png">IPSharkkResources/minimizec.png</file>
+        <file alias="minimizeh.png">IPSharkkResources/minimizeh.png</file>
+        <file alias="buttonsb.png">IPSharkkResources/buttonsb.png</file>
+        <file alias="flag_fr.png">IPSharkkResources/flag_fr.png</file>
+        <file alias="cursor.gif">IPSharkkResources/cursor.gif</file>
+        <file alias="loadingflag.gif">IPSharkkResources/loadingflag.gif</file>
+        <file alias="backgroundmask.png">IPSharkkResources/backgroundmask.png</file>
+        <file alias="lite-plus.png">IPSharkkResources/lite-plus.png</file>
+    </qresource>
+    <qresource prefix="/gui">
+        <file alias="gui.html">IPSharkkResources/gui.html</file>
+        <file alias="MessageReceiver.js">IPSharkkResources/MessageReceiver.js</file>
+        <file alias="scripts.js">IPSharkkResources/scripts.js</file>
+        <file alias="style.css">IPSharkkResources/style.css</file>
+        <file alias="jquery.jqGrid.min.js">IPSharkkResources/jquery.jqGrid.min.js</file>
+        <file alias="jquery-ui-1.10.2.custom.min.js">IPSharkkResources/jquery-ui-1.10.2.custom.min.js</file>
+        <file alias="jquery-1.9.0.min.js">IPSharkkResources/jquery-1.9.0.min.js</file>
+        <file alias="perfect-scrollbar.min.css">IPSharkkResources/perfect-scrollbar.min.css</file>
+        <file alias="jquery-ui-cupertino.css">IPSharkkResources/jquery-ui-cupertino.css</file>
+        <file alias="jquery-ui-lightness.css">IPSharkkResources/jquery-ui-lightness.css</file>
+        <file alias="jquery-ui-sunny.css">IPSharkkResources/jquery-ui-sunny.css</file>
+        <file alias="jquery-ui-flick.css">IPSharkkResources/jquery-ui-flick.css</file>
+        <file alias="jquery-ui-excite.css">IPSharkkResources/jquery-ui-excite.css</file>
+        <file alias="jquery-ui-redmont.css">IPSharkkResources/jquery-ui-redmont.css</file>
+        <file alias="jQueryRotate.js">IPSharkkResources/jQueryRotate.js</file>
+        <file alias="buttons.png">IPSharkkResources/buttons.png</file>
+        <file alias="buttonshover.png">IPSharkkResources/buttonshover.png</file>
+        <file alias="titlebar.png">IPSharkkResources/titlebar.png</file>
+        <file alias="resize.png">IPSharkkResources/resize.png</file>
+        <file alias="buttonsb.png">IPSharkkResources/buttonsb.png</file>
+        <file alias="close.png">IPSharkkResources/close.png</file>
+        <file alias="closec.png">IPSharkkResources/closec.png</file>
+        <file alias="closeh.png">IPSharkkResources/closeh.png</file>
+        <file alias="maximize.png">IPSharkkResources/maximize.png</file>
+        <file alias="maximizec.png">IPSharkkResources/maximizec.png</file>
+        <file alias="maximizeh.png">IPSharkkResources/maximizeh.png</file>
+        <file alias="minimize.png">IPSharkkResources/minimize.png</file>
+        <file alias="minimizec.png">IPSharkkResources/minimizec.png</file>
+        <file alias="minimizeh.png">IPSharkkResources/minimizeh.png</file>
+        <file alias="ScriptsIpList.js">IPSharkkResources/ScriptsIpList.js</file>
+        <file alias="button-clicked.png">IPSharkkResources/button-clicked.png</file>
+        <file alias="button-hover.png">IPSharkkResources/button-hover.png</file>
+        <file alias="button.png">IPSharkkResources/button.png</file>
+        <file alias="titlebarbig.png">IPSharkkResources/titlebarbig.png</file>
+        <file alias="button-menu-hover.png">IPSharkkResources/button-menu-hover.png</file>
+        <file alias="button-menu.png">IPSharkkResources/button-menu.png</file>
+        <file alias="tuxler.png">IPSharkkResources/tuxler.png</file>
+        <file alias="lefttool.png">IPSharkkResources/lefttool.png</file>
+        <file alias="righttool.png">IPSharkkResources/righttool.png</file>
+        <file alias="middletool.png">IPSharkkResources/middletool.png</file>
+        <file alias="buypro.png">IPSharkkResources/buypro.png</file>
+        <file alias="chosen.jquery.js">IPSharkkResources/chosen.jquery.js</file>
+        <file alias="qm.png">IPSharkkResources/qm.png</file>
+        <file alias="chosen.css">IPSharkkResources/chosen.css</file>
+ 	<file alias="chosen-sprite.png">IPSharkkResources/chosen-sprite.png</file>
+
+	<file alias="perfect-scrollbar.jquery.js">IPSharkkResources/perfect-scrollbar.jquery.js</file>
+
+	<file alias="jquery-1.7.2.js">IPSharkkResources/jquery-1.7.2.js</file>
+
+	<file alias="perfect-scrollbar.css">IPSharkkResources/perfect-scrollbar.css</file>
+
+
+
+    </qresource>
+</RCC>

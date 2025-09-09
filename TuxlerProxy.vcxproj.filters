@@ -1,0 +1,2237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Generated Files\Debug">
+      <UniqueIdentifier>{e3c4f97f-8c6c-408c-aa2d-30780a6f255d}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Release">
+      <UniqueIdentifier>{cc8394f5-155d-4ac4-bff1-57801b6634e1}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="instancecommunication.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="iplist.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="jsbridge.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mainwindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="messageqeue.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="parsemessage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="proxysettings.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="settings.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="systemproxy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tooltip.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="translator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tuxlerapp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="functions_.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_messageqeue.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Release\moc_messageqeue.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="sha1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EngineImpl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="newipengineconnector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_newipengineconnector.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Release\moc_newipengineconnector.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="EngineEvents.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="base64.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WebSocketClient.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_WebSocketClient.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Release\moc_WebSocketClient.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="instancecommunication.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="jsbridge.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="mainwindow.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="settings.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="systemproxy.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="tooltip.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="tuxlerapp.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ui_mainwindow.h">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ui_tooltip.h">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="config.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="functions.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="iplist.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="parsemessage.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="proxysettings.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="translator.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="5rJr5.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="8xDbU.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\AD.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\AE.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\AF.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\AG.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\AI.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\AL.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\AM.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\AN.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\AO.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\AQ.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\AR.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\AS.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\AT.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\AU.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\AW.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\AX.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\AZ.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\BA.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\BB.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\BD.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\BE.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\BF.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\BG.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\BH.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\BI.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\BJ.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\BL.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\BM.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\BN.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\BO.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\BR.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\BS.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\BT.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\BW.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\BY.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\BZ.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\CA.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\CC.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\CD.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\CF.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\CG.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\CH.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\CI.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\CK.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\CL.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\CM.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\CN.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\CO.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\CR.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\CU.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\CV.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\CW.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\CX.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\CY.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\CZ.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\DE.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\DJ.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\DK.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\DM.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\DO.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\DZ.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\EC.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\EE.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\EG.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\EH.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\ER.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\ES.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\ET.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\EU.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\FI.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\FJ.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\FK.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\FM.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\FO.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\FR.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="FguQn.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="FreeVersion.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\GA.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\GB.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\GD.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\GE.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\GG.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\GH.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\GI.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\GL.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\GM.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\GN.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\GQ.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\GR.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\GS.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\GT.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\GU.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\GW.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\GY.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\HK.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\HN.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\HR.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\HT.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\HU.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\IC.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\ID.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\IE.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\IL.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\IM.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\IN.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\IO.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\IQ.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\IR.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\IS.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\IT.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\JE.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\JM.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\JO.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\JP.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\KE.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\KG.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\KH.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\KI.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\KM.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\KN.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\KP.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="KQvwk.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\KR.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\KW.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\KY.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\KZ.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\LA.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\LB.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\LC.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\LI.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\LK.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\LR.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\LS.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\LT.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\LU.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\LV.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\LY.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\MA.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\MC.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\MD.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\ME.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\MF.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\MG.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\MH.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\MK.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\ML.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\MM.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\MN.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\MO.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\MP.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\MQ.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\MR.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\MS.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\MT.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\MU.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\MV.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\MW.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\MX.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\MY.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\MZ.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="MessageReceiver.js">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\NA.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\NC.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\NE.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\NF.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\NG.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\NI.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\NL.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\NO.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\NP.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="NQ2K6.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\NR.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\NU.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\NZ.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="NdaTT.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\OM.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\PA.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\PE.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\PF.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\PG.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\PH.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\PK.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\PL.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\PM.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\PN.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\PR.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\PS.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\PT.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\PW.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\PY.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="PremiumVersion.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\QA.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="RDf8L.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\RO.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\RS.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\RU.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\RW.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Rb6ru.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\SA.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\SB.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\SC.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\SD.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\SE.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\SG.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\SH.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\SI.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\SK.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\SL.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\SM.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\SN.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\SO.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\SR.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\SS.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\ST.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\SV.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\SY.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\SZ.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ScriptsIpList.js">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\TC.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\TD.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\TF.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\TG.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\TH.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\TJ.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\TK.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\TL.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\TM.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\TN.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\TO.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\TR.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\TT.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\TV.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\TW.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\TZ.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="TuxlerLogo160.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="TuxlerLogo320.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\UA.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\UG.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\US.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\UY.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\UZ.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="UjkVR.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\VA.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\VC.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\VE.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\VG.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\VI.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\VN.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\VU.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\WF.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\WS.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\YE.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="YQRD7.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\YT.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\ZA.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\ZM.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\ZW.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\_abkhazia.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\_basque-country.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\_british-antarctic-territory.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\_commonwealth.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\_england.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\_gosquared.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\_kosovo.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\_mars.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\_nagorno-karabakh.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\_nato.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\_northern-cyprus.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\_olympics.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\_red-cross.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\_scotland.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\_somaliland.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\_south-ossetia.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\_united-nations.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\_unknown.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flags\_wales.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="aKKDY.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="app_logo.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="background.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="backgroundmask.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="button-clicked.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="button-hover.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="button-menu-hover.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="button-menu.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="button.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="button_menu.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="buttons.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="buttonsb.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="buttonshover.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="buypro.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="close.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="closec.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="closeh.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="cursor.gif">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="dGOKL.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flag_fr.ico">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="flag_fr.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="gT5BM.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="gui.html">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="icon_128x128.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="icon_16x16.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="icon_256x256.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="icon_32x32.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="icon_512x512.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="jQueryRotate.js">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="jquery-1.9.0.min.js">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="jquery-ui-1.10.2.custom.min.js">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="jquery-ui-cupertino.css">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="jquery-ui-excite.css">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="jquery-ui-flick.css">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="jquery-ui-lightness.css">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="jquery-ui-redmont.css">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="jquery-ui-sunny.css">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="jquery.jqGrid.min.js">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="lefttool.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="lite-plus.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="loadingflag.gif">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="maximize.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="maximizec.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="maximizeh.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="middletool.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="minimize.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="minimizec.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="minimizeh.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="p7j9a.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="p9yMk.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="perfect-scrollbar.min.css">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="puDsH.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="rPEsZ.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="resize.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="righttool.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="scripts.js">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="style.css">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="tbl_head_bg.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="titlebar.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="titlebarbig.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="tuxler.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="uW3TL.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="messageqeue.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="newipengineconnector.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="WebSocketClient.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="debug\moc_instancecommunication.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\moc_instancecommunication.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debug\moc_jsbridge.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\moc_jsbridge.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debug\moc_mainwindow.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\moc_mainwindow.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debug\moc_settings.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\moc_settings.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debug\moc_systemproxy.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\moc_systemproxy.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debug\moc_tooltip.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\moc_tooltip.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debug\moc_tuxlerapp.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\moc_tuxlerapp.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debug\qrc_resources.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\qrc_resources.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="mainwindow.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="tooltip.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="resources.qrc">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="AppInfo.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ico.ico" />
+    <None Include="setup\install.iss" />
+    <None Include="index.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="js\scripts.js">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="css\mem5YaGs126MiZpBA-UN_r8OUehpOqc.woff2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="css\mem5YaGs126MiZpBA-UN_r8OUuhp.woff2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="css\mem5YaGs126MiZpBA-UN_r8OVuhpOqc.woff2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="css\mem5YaGs126MiZpBA-UN_r8OXehpOqc.woff2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="css\mem5YaGs126MiZpBA-UN_r8OX-hpOqc.woff2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="css\mem5YaGs126MiZpBA-UN_r8OXOhpOqc.woff2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="css\mem5YaGs126MiZpBA-UN_r8OXuhpOqc.woff2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="css\mem5YaGs126MiZpBA-UN7rgOUehpOqc.woff2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="css\mem5YaGs126MiZpBA-UN7rgOUuhp.woff2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="css\mem5YaGs126MiZpBA-UN7rgOVuhpOqc.woff2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="css\mem5YaGs126MiZpBA-UN7rgOXehpOqc.woff2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="css\mem5YaGs126MiZpBA-UN7rgOX-hpOqc.woff2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="css\mem5YaGs126MiZpBA-UN7rgOXOhpOqc.woff2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="css\mem5YaGs126MiZpBA-UN7rgOXuhpOqc.woff2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="css\mem5YaGs126MiZpBA-UN8rsOUehpOqc.woff2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="css\mem5YaGs126MiZpBA-UN8rsOUuhp.woff2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="css\mem5YaGs126MiZpBA-UN8rsOVuhpOqc.woff2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="css\mem5YaGs126MiZpBA-UN8rsOXehpOqc.woff2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="css\mem5YaGs126MiZpBA-UN8rsOX-hpOqc.woff2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="css\mem5YaGs126MiZpBA-UN8rsOXOhpOqc.woff2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="css\mem5YaGs126MiZpBA-UN8rsOXuhpOqc.woff2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="css\mem8YaGs126MiZpBA-UFUZ0bbck.woff2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="css\mem8YaGs126MiZpBA-UFVp0bbck.woff2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="css\mem8YaGs126MiZpBA-UFVZ0b.woff2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="css\mem8YaGs126MiZpBA-UFW50bbck.woff2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="css\mem8YaGs126MiZpBA-UFWJ0bbck.woff2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="css\mem8YaGs126MiZpBA-UFWp0bbck.woff2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="css\mem8YaGs126MiZpBA-UFWZ0bbck.woff2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="css\normalize.css">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="css\opensans.css">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="css\style.css">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="css\style-test.css">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="img\testsvg.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="version_info.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sha1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base64.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="img\about_icon.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\btn-disable.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\btn-enable.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\chrome_store.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\crown_icon.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\exit_icon.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flag_icon.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\ham.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\info_icon.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\logo.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\protected_icon.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\protected_icon--white.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\protected-mini_icon.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\reload_icon.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\resell_icon.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\spinner.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\star.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\star-color.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\support_icon.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\trash_icon.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\unprotected_icon.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\unprotected-mini_icon.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\user_icon.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\ad.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\ae.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\af.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\ag.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\ai.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\al.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\am.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\ao.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\aq.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\ar.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\as.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\at.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\au.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\aw.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\ax.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\az.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\ba.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\bb.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\bd.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\be.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\bf.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\bg.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\bh.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\bi.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\bj.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\bl.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\bm.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\bn.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\bo.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\bq.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\br.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\bs.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\bt.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\bv.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\bw.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\by.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\bz.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\ca.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\cc.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\cd.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\cf.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\cg.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\ch.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\ci.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\ck.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\cl.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\cm.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\cn.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\co.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\cr.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\cu.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\cv.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\cw.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\cx.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\cy.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\cz.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\de.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\dj.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\dk.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\dm.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\do.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\dz.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\ec.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\ee.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\eg.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\eh.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\er.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\es.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\et.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\fi.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\fj.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\fk.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\fm.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\fo.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\fr.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\ga.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\gb.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\gb-eng.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\gb-nir.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\gb-sct.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\gb-wls.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\gd.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\ge.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\gf.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\gg.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\gh.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\gi.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\gl.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\gm.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\gn.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\gp.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\gq.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\gr.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\gs.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\gt.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\gu.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\gw.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\gy.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\hk.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\hm.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\hn.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\hr.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\ht.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\hu.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\id.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\ie.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\il.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\im.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\in.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\io.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\iq.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\ir.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\is.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\it.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\je.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\jm.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\jo.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\jp.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\ke.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\kg.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\kh.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\ki.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\km.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\kn.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\kp.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\kr.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\kw.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\ky.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\kz.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\la.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\lb.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\lc.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\li.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\lk.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\lr.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\ls.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\lt.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\lu.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\lv.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\ly.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\ma.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\mc.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\md.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\me.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\mf.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\mg.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\mh.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\mk.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\ml.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\mm.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\mn.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\mo.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\mp.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\mq.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\mr.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\ms.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\mt.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\mu.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\mv.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\mw.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\mx.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\my.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\mz.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\na.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\nc.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\ne.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\nf.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\ng.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\ni.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\nl.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\no.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\np.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\nr.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\nu.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\nz.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\om.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\pa.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\pe.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\pf.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\pg.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\ph.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\pk.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\pl.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\pm.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\pn.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\pr.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\ps.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\pt.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\pw.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\py.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\qa.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\re.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\ro.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\rs.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\ru.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\rw.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\sa.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\sb.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\sc.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\sd.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\se.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\sg.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\sh.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\si.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\sj.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\sk.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\sl.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\sm.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\sn.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\so.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\sr.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\ss.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\st.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\sv.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\sx.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\sy.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\sz.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\tc.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\td.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\tf.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\tg.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\th.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\tj.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\tk.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\tl.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\tm.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\tn.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\to.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\tr.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\tt.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\tv.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\tw.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\tz.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\ua.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\ug.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\um.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\us.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\uy.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\uz.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\va.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\vc.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\ve.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\vg.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\vi.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\vn.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\vu.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\wf.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\ws.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\xk.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\ye.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\yt.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\za.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\zm.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\flags\zw.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

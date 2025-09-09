@@ -1,0 +1,413 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Tuxler</title>
+    <link href="qrc:/css/css/opensans.css" rel="stylesheet">
+    <link href="qrc:/css/css/normalize.css" rel="stylesheet">
+    <link rel="stylesheet" href="qrc:/gui/chosen.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="qrc:/gui/perfect-scrollbar.css" type="text/css" media="all" />
+    <link href="qrc:/css/css/style.css" rel="stylesheet">
+
+    <script type="text/javascript" src="qrc:/gui/jquery-1.7.2.js"></script>
+    <script type="text/javascript" src="qrc:/gui/chosen.jquery.js"></script>
+    <script type="text/javascript" src="qrc:/gui/perfect-scrollbar.jquery.js"></script>
+    <script type="text/javascript" src="qrc:/gui/scripts.js"></script>
+
+    <style id="placeholder-style"></style>
+</head>
+<body class="popup-box">
+<div class="menu-sidebar">
+    <div class="header">
+        <h1>MENU</h1>
+        <img class="icon--exit" src="qrc:/img/img/exit_icon.png">
+    </div>
+    <ul>
+        <a class="menu-item" href="minimize"><li>MINIMIZE WINDOW</li></a>
+        <a class="menu-item premium-hide" href="login"><li>PREMIUM LOGIN</li></a>
+        <a class="menu-item free-hide" style="display:none;" href="ainfo"><li>ACCOUNT INFO</li></a>
+        <a class="menu-item premium-hide" href="premium"><li>UPGRADE TO PREMIUM</li></a>
+        <a class="menu-item" href="update"><li>CHECK FOR UPDATES</li></a>
+        <a class="menu-item" href="support"><li>SUPPORT</li></a>
+        <a class="menu-item" href="reseller"><li>RESELLER PROGRAM</li></a>
+        <a class="menu-item" href="guide"><li>USER GUIDE</li></a>
+        <a class="menu-item" href="about"><li>ABOUT TUXLER</li></a>
+        <a class="menu-item" href="exit"><li>EXIT</li></a>
+    </ul>
+</div>
+
+<a style="display:none;" id="premium-active" class="premium-bar premium free-hide">PREMIUM MEMBERSHIP</a>
+
+<a id="premium-inactive" class="premium-bar no-premium">
+    <svg version="1.1" id="arrow_left" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M6.00705 16.2809C6.04401 16.2641 6.08097 16.2439 6.11456 16.2204C8.79892 14.6716 11.4866 13.1228 14.1744 11.574C14.7354 11.2515 15.2965 10.9256 15.8576 10.5997V10.5963C16.0759 10.4855 16.2271 10.2604 16.2271 9.99832C16.2271 9.77322 16.1162 9.575 15.9449 9.45406C15.918 9.4339 15.8878 9.4171 15.8576 9.40366C15.7668 9.34991 15.6728 9.29615 15.5821 9.2424C14.0937 8.38233 12.5987 7.52562 11.1104 6.66555C9.43726 5.70133 7.76079 4.73375 6.08769 3.76953C6.07089 3.75945 6.05409 3.74937 6.03729 3.73929C5.94658 3.69226 5.83907 3.66538 5.7282 3.66538C5.35864 3.66538 5.05627 3.96439 5.05627 4.33731C5.05627 8.11692 5.05627 11.8965 5.05627 15.6728C5.05627 16.0423 5.35864 16.3447 5.7282 16.3447C5.82563 16.3413 5.92306 16.3178 6.00705 16.2809Z" fill="black"/>
+    </svg>
+
+    <p>BUY PREMIUM</p>
+    <svg version="1.1" id="arrow_right" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="20px"
+         viewBox="0 0 595.3 595.3" style="enable-background:new 0 0 595.3 595.3;" xml:space="preserve">
+<path d="M416.5,110.7c-1.1,0.5-2.2,1.1-3.2,1.8c-79.9,46.1-159.9,92.2-239.9,138.3c-16.7,9.6-33.4,19.3-50.1,29v0.1l0,0
+	c-6.5,3.3-11,10-11,17.8c0,6.7,3.3,12.6,8.4,16.2c0.8,0.6,1.7,1.1,2.6,1.5c2.7,1.6,5.5,3.2,8.2,4.8c44.3,25.6,88.8,51.1,133.1,76.7
+	c49.8,28.7,99.7,57.5,149.5,86.2c0.5,0.3,1,0.6,1.5,0.9c2.7,1.4,5.9,2.2,9.2,2.2c11,0,20-8.9,20-20c0,0,0,0,0,0s0,0,0,0
+	c0-112.5,0-225,0-337.4c0,0,0,0,0,0s0,0,0,0c0-11-9-20-20-20C421.9,108.9,419,109.6,416.5,110.7z"/>
+</svg>
+</a>
+<!-- ^ global ^ -->
+
+<!-- START 7 -->
+<div id="7" class="view">
+    <div class="menu-bar">
+        <img class="logo" src="qrc:/img/img/logo.png"/>
+        <img class="ham" src="qrc:/img/img/ham.png"/>
+    </div>
+    <main class="margin flex column">
+        <div class="flex vertical-center space-beetween holder-status">
+            <div id="status-unprotected" class="protect-status unprotected list-invisible">unprotected</div>
+            <div id="status-protected" class="protect-status protected list-visible" style="float: left;">protected</div>
+            <div class="switcher">
+                <input type="checkbox" class="checkbox" id="iplistswitch">
+                <div class="knobs"></div>
+                <div class="layer"></div>
+            </div>
+        </div>
+        <div class="flex vertical-center horizontal-center full-height list-invisible">
+            <img class="icon--unprotected" src="qrc:/img/img/unprotected_icon.png"/>
+        </div>
+        <div class="list-visible">
+            <div class="flex vertical-center">
+                <div class="type-switcher">
+                    <div id="datacenterbtn" class="type resdatclass active">DATA CENTER</div>
+                    <div id="residentialbtn" class="type resdatclass">RESIDENTIAL</div>
+                </div>
+            </div>
+            <div class="flex vertical-center horizontal-center full-height column margin-top-fix">
+                <h1>CHOOSE YOUR LOCATION</h1>
+                <div class="inputs" style="margin-top: 5px;">
+                    <div class="custom-select">
+                        <select name="country" id="country-select" class="country-select"></select>
+                    </div>
+                    <div class="custom-select">
+                        <select name="city" id="city-select" class="city-select"></select>
+                    </div>
+                </div>
+                <div class="reload" id="next_nearby">
+                    <div class="text">
+                        <p>RELOAD TO NEXT NEARBY LOCATION</p>
+                    </div>
+                    <div class="icon">
+                        <img class="icon--reload" src="qrc:/img/img/reload_icon.png" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="bottom-bar">
+        <img id="image-my-ip" class="icon--flag list-invisible" src="qrc:/img/flags/img/flags/_unknown.png" />
+        <img id="image-current-ip" class="icon--flag list-visible" src="qrc:/img/flags/img/flags/_unknown.png" />
+        <p id="location-my-ip" class="location-text list-invisible">...</p>
+        <p id="location-current-ip" class="location-text list-visible">...</p>
+        <img id="location-lock-unlocked" class="icon--unprotected-mini list-invisible" src="qrc:/img/img/unprotected-mini_icon.png"/>
+        <img id="location-lock-locked" class="icon--protected-mini list-visible" src="qrc:/img/img/protected-mini_icon.png" />
+    </div>
+</div>
+<!-- END 7 -->
+
+<!-- START 9 -->
+<div id="9" class="view">
+    <div class="menu-bar">
+        <img class="logo" src="qrc:/img/img/logo.png"/>
+        <img class="ham" src="qrc:/img/img/ham.png"/>
+    </div>
+    <div class="lost-connection">
+        <img class="spinner" src="qrc:/img/img/spinner.png"/>
+        <h1>PLEASE WAIT</h1>
+        <p>TuxlerVPN has lost connection<br>
+            to the server and it’s trying to reconnect again</p>
+        <img class="icon--exit button-exit-to-main" src="qrc:/img/img/exit_icon.png"/>
+    </div>
+</div>
+<!-- END 9 -->
+
+<!-- START 14 -->
+<div id="14" class="view">
+    <div class="menu-bar shadow">
+        <h1>ABOUT TUXLER</h1>
+        <img class="ham" src="qrc:/img/img/ham.png"/>
+    </div>
+    <div class="info">
+        <img class="icon--about" src="qrc:/img/img/about_icon.png"/>
+        <div class="content">
+            <p>Software version: <span id="b-version">...</span><br>
+                Release date: <span id="b-date">...</span><br>
+    <br>
+    Corporate address:
+    <br>
+    Tuxler Privacy Technologies, Inc.<br>
+    500 Ygnacio Valley Road, Suite 410<br>
+    Walnut Creek; CA 94596<br>
+    <br>
+    Website address:<br>
+    <a href="http://www.tuxlervpn.com" class="non-clickable">www.tuxlervpn.com</a><br>
+    <br>
+    E-mail address:<br>
+    <a href="mailto:support@tuxler.com" class="non-clickable">support@tuxler.com</a>
+</p>
+        </div>
+        <a class="btn main gold hidden"></a>
+        <img class="icon--exit button-exit-to-main" src="qrc:/img/img/exit_icon.png"/>
+    </div>
+</div>
+<!-- END 14 -->
+
+<!-- START 17 -->
+<div id="17" class="view">
+    <div class="menu-bar shadow">
+        <h1>SUPPORT</h1>
+        <img class="ham" src="qrc:/img/img/ham.png"/>
+    </div>
+    <div class="info">
+        <img class="icon--support" src="qrc:/img/img/support_icon.png"/>
+        <div class="content">
+            <p>TuxlerVPN provides <span class="gold">24/7</span> support for all our users.<br><br>Please feel free to contact us at any time.</p>
+        </div>
+        <a class="btn main gold menu-item" href="support-click">contact support team</a>
+        <img class="icon--exit button-exit-to-main" src="qrc:/img/img/exit_icon.png"/>
+    </div>
+</div>
+<!-- END 17 -->
+
+<!-- START 19 -->
+<div id="19" class="view">
+    <div class="menu-bar shadow">
+        <h1>RESSELLER PROGRAM</h1>
+        <img class="ham" src="qrc:/img/img/ham.png"/>
+    </div>
+    <div class="info">
+        <img class="icon--resell" src="qrc:/img/img/resell_icon.png"/>
+        <div class="content">
+            <p>Become a tuxlerVPN reseller and <span class="gold">earn money</span> reselling tuxlerVPN Keys to your local community.</p>
+        </div>
+        <a class="btn main gold menu-item" href="reseller-click">join</a>
+        <img class="icon--exit button-exit-to-main" src="qrc:/img/img/exit_icon.png"/>
+    </div>
+</div>
+<!-- END 19 -->
+
+<!-- START 21 -->
+<div id="21" class="view">
+    <div class="menu-bar shadow">
+        <h1>USER GUIDE</h1>
+        <img class="ham" src="qrc:/img/img/ham.png"/>
+    </div>
+    <div class="info">
+        <img class="icon--user" src="qrc:/img/img/user_icon.png"/>
+        <div class="content">
+            <p>Visit our user guide and learn how to use all tuxlerVPN features.</p>
+        </div>
+        <a class="btn main gold menu-item" href="guide-click">view user guide</a>
+        <img class="icon--exit button-exit-to-main" src="qrc:/img/img/exit_icon.png"/>
+    </div>
+</div>
+<!-- END 21 -->
+
+<!-- START 23 -->
+<div id="23" class="view">
+    <div class="menu-bar shadow">
+        <h1></h1>
+        <img class="ham" src="qrc:/img/img/ham.png"/>
+    </div>
+    <div class="info">
+        <img class="icon--crown" src="qrc:/img/img/crown_icon.png"/>
+        <div class="content">
+            <h1 class="login-form-login">
+                PLEASE ENTER YOUR PREMIUM MEMBER<br>
+                CREDENTIALS TO ACCESS TUXLERVPN<br>
+                PREMIUM MEMBERSHIP
+            </h1>
+            <h1 class="login-form-logout">
+                YOUR PREMIUM<br>
+                MEMBERSHIP INFORMATION
+            </h1>
+            <div class="inputs" id="logininputs">
+                <input id="email" class="login" type="text" name="email" placeholder="EMAIL ADDRESS"/>
+                <input id="password" class="login" type="password" placeholder="PASSWORD"/>
+            </div>
+
+            <div class="login-form-logout">
+                <span class="info_premium">Expiration date: <span class="black" id="expire_days">... days</span></span><br />
+                <span class="info_premium">IP location pool: <span id="ip_location_pool">...</span></span><br />
+                <span class="info_premium">Location changes: <span id="ip_location_changes">...</span></span><br />
+                <span class="info_premium">Country selection: <span id="country_enabled">...</span></span><br />
+                <span class="info_premium">City selection: <span id="city_enabled">...</span></span><br />
+                <span class="info_premium">Bandwidth (MB): <span id="bandwidth">...</span></span>
+            </div>
+        </div>
+        <a class="btn main gold" id="oklogin">LOG IN</a>
+        <img id="closebuttonlogin" class="icon--exit button-exit-to-main" src="qrc:/img/img/exit_icon.png"/>
+    </div>
+</div>
+<!-- END 23 -->
+
+<!-- START 35 -->
+<div id="35" class="view">
+    <div class="menu-bar">
+        <img class="logo" src="qrc:/img/img/logo.png"/>
+        <img class="ham" src="qrc:/img/img/ham.png"/>
+    </div>
+    <div class="info white">
+        <div class="content">
+            <h1>
+                HOW DO YOU LIKE<br>
+                TUXLER VPN?
+            </h1>
+            <div class="stars">
+                <div class="star color" id="star1"></div>
+                <div class="star color" id="star2"></div>
+                <div class="star color" id="star3"></div>
+                <div class="star color" id="star4"></div>
+                <div class="star color" id="star5"></div>
+            </div>
+            <a class="btn main gold" id="starsubmit">SUBMIT</a>
+        </div>
+        <img class="icon--exit button-exit-to-main" id="rating-cancel-click" src="qrc:/img/img/exit_icon.png"/>
+    </div>
+</div>
+<!-- END 35 -->
+
+<!-- START 36 -->
+<div id="36" class="view">
+    <div class="menu-bar">
+        <img class="logo" src="qrc:/img/img/logo.png"/>
+        <img class="ham" src="qrc:/img/img/ham.png"/>
+    </div>
+    <div class="info white">
+        <div class="content">
+            <h1>
+                THANK YOU FOR RATING TUXLER VPN.<br>
+                PLEASE SHARE YOUR THOUGTS<br>
+                ABOUT TUXLER WITH FACEBOOK COMMUNITY
+            </h1>
+            <img class="chrome-store" src="qrc:/img/img/chrome_store.png"/>
+            <a class="btn main gold menu-item button-exit-to-main" href="sharefacebook" >SHARE YOU OPINION</a>
+        </div>
+        <img class="icon--exit button-exit-to-main" src="qrc:/img/img/exit_icon.png"/>
+    </div>
+</div>
+<!-- END 36 -->
+
+<!-- START 37 -->
+<div id="37" class="view">
+    <div class="menu-bar">
+        <img class="logo" src="qrc:/img/img/logo.png"/>
+        <img class="ham" src="qrc:/img/img/ham.png"/>
+    </div>
+    <div class="info white">
+        <div class="content">
+            <h1>
+                WHAT COULD WE IMPROVE?<br>
+            </h1>
+            <textarea id="shareopinion-text" placeholder="WRITE YOUR FEEDBACK"></textarea>
+            <a class="btn main gold" id="share-opinion-button">SHARE YOU OPINION</a>
+        </div>
+        <img style="margin-top: calc(67px + 25px);" class="icon--exit button-exit-to-main" id="rating-cancel-click-feedback" src="qrc:/img/img/exit_icon.png"/>
+    </div>
+</div>
+<!-- END 37 -->
+
+<!-- START 42 -->
+<div id="42" class="view visible">
+    <div class="hide-button"></div>
+    <div class="loading">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+             viewBox="0 0 43 64.9" style="enable-background:new 0 0 43 64.9;" heigh="150" width="100" xml:space="preserve">
+                <style type="text/css">
+                    /*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: dead
+*/
+
+                    .st0 {
+                        fill: rgba(11, 220, 173, 0.0);
+                        stroke-dasharray: 280;
+                        stroke-dashoffset: 280;
+                        -webkit-animation: dash 1s forwards,
+                        fadein 1s 0.8s forwards;
+                        animation: dash 1s forwards,
+                        fadein 1s 0.8s forwards;
+                        stroke: rgba(11, 220, 173, 1);
+                        -webkit-transition: stroke 10s ease;
+                        -o-transition: stroke 10s ease;
+                        transition: stroke 10s ease;
+                    }
+                    @-webkit-keyframes dash {
+                        85%{
+                            stroke: rgba(11, 220, 173, 1);
+                        }
+                        100%{
+                            stroke-dashoffset: 0;
+                            stroke: rgba(0, 0, 0, 1);
+                        }
+                    }
+                    @keyframes dash {
+                        85%{
+                            stroke: rgba(11, 220, 173, 1);
+                        }
+                        100%{
+                            stroke-dashoffset: 0;
+                            stroke: rgba(0, 0, 0, 1);
+                        }
+                    }
+                    @-webkit-keyframes fadein {
+                        to {
+                            fill: rgba(11, 220, 173, 1);
+                        }
+                    }
+                    @keyframes fadein {
+                        to {
+                            fill: rgba(11, 220, 173, 1);
+                        }
+                    }
+                </style>
+            <path class="st0" d="M21.5,26h3.4H32V32h-7.1v22.8h0v9.5c3.1-1.8,6.1-3.8,8.8-6.3c3.2-2.8,5.9-6,7.6-9.9c0.7-1.6,1.2-3.3,1.2-5.1
+	c0-6.6,0-13.3,0-19.9c0-0.5-0.2-0.8-0.6-1c-1.3-0.6-2.6-1.3-4-1.9c0-0.9,0-1.7,0-2.6c-0.1-1.3-0.1-2.5-0.4-3.8
+	c-0.7-3.5-2.4-6.4-5-8.7c-2.3-2.1-5.1-3.5-8.2-4c-0.5-0.1-1.1-0.2-1.6-0.3c-0.4,0-0.8,0-1.1,0c-0.4,0-0.8,0-1.1,0
+	c-0.1,0-0.2,0.1-0.3,0.1C17.6,1,15.4,1.7,13.3,3C9,5.6,6.3,9.4,5.4,14.4c-0.1,0.5-0.2,1.1-0.2,1.6c0,1.4,0,2.7,0,4.1
+	c-1.3,0.6-2.5,1.2-3.8,1.8c-0.6,0.3-0.8,0.6-0.8,1.3c0,6.6,0.1,13.2,0,19.8c0,2,0.5,3.8,1.3,5.6c2,4.4,5.3,7.9,9,10.9
+	c2,1.6,4.1,3.1,6.4,4.4c0.3,0.2,0.6,0.3,0.8,0.5v-9.5v-0.1V32h-7V26h7H21.5 M30.9,16.7c-2.9-1.4-5.8-2.8-8.7-4.3
+	c-0.2-0.1-0.5-0.2-0.7-0.3c-0.1,0-0.3,0.1-0.4,0.1c-2.9,1.4-5.8,2.9-8.7,4.3c-0.2,0.1-0.4,0.2-0.7,0.3c0-0.4,0-0.8,0.1-1.2
+	c0.1-1.2,0.5-2.2,1.1-3.2c1.8-3.2,5.1-5.2,8.6-5.1c0.5,0,1,0.1,1.5,0.1c3.6,0.6,6.1,2.7,7.6,6.1c0.5,1.1,0.6,2.2,0.7,3.4
+	C31.2,16.8,31.1,16.7,30.9,16.7z"/>
+</svg>
+        <h1>tuxlerVPN</h1>
+        <div class="progress-bar">
+            <div></div>
+        </div>
+    </div>
+</div>
+<!-- END 42 -->
+
+<!-- START 44 -->
+<div id="44" class="view">
+    <div class="info big">
+        <img class="logo" src="qrc:/img/img/logo.png"/>
+        <div class="content">
+            <h1>Thank you</h1>
+            <p>for your valuable feedback,<br>
+                we appreciate it and we will use<br>
+                it to improve Tuxler VPN.
+            </p>
+        </div>
+        <a class="btn main gold button-exit-to-main">OK</a>
+        <img class="icon--exit button-exit-to-main" src="qrc:/img/img/exit_icon.png"/>
+    </div>
+</div>
+<!-- END 44 -->
+
+<!-- v global v -->
+<script src="qrc:/js/js/scripts.js"></script>
+</body>
+</html>
