@@ -1,11 +1,10 @@
-name: Build VPN Clients
+name: Build VPN Clients (Win32)
 
 on:
   push:
-    branches: [ "main" ]
+    branches:
+      - main
   pull_request:
-    branches: [ "main" ]
-  workflow_dispatch:
 
 jobs:
   build:
@@ -13,7 +12,7 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Install Qt 5.15.2
         uses: jurplel/install-qt-action@v3
@@ -21,10 +20,8 @@ jobs:
           version: '5.15.2'
           arch: win32_msvc2019
 
-      - name: Set up Qt environment
-        run: |
-          echo "QTDIR=$env:IQTA_TOOLS" >> $env:GITHUB_ENV
-          echo "$env:IQTA_TOOLS\bin" >> $env:GITHUB_PATH
+      - name: Add Qt bin to PATH
+        run: echo "$env:IQTA_TOOLS\bin" >> $env:GITHUB_PATH
 
       - name: Setup MSBuild
         uses: microsoft/setup-msbuild@v2
@@ -40,5 +37,5 @@ jobs:
         with:
           name: VPNClients
           path: |
-            Release/*.exe
-            x86/Release/*.exe
+            **/Release/*.exe
+            **/x86/Release/*.exe
