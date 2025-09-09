@@ -37,7 +37,9 @@ jobs:
         uses: microsoft/setup-msbuild@v2
 
       - name: Build IPSharkk (Win32 Release)
-        run: msbuild IPSharkk.sln /p:Configuration=Release /p:Platform=Win32 /verbosity:detailed > build.log
+        shell: pwsh
+        run: msbuild IPSharkk.sln /p:Configuration=Release /p:Platform=Win32 /verbosity:detailed | Tee-Object -FilePath build.log
+
 
       - name: Show build log (last 200 lines)
         shell: pwsh
