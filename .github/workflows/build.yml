@@ -31,9 +31,13 @@ jobs:
         run: |
           git clone --depth=1 https://github.com/qt-labs/vstools.git
           mkdir "$env:Qt5_Dir\msbuild"
-          Copy-Item "vstools\QtMsBuild\*" "$env:Qt5_Dir\msbuild\" -Recurse -Force
+          Copy-Item "vstools\msbuild\*" "$env:Qt5_Dir\msbuild\" -Recurse -Force
           Copy-Item "vstools\msbuild\Qt.props" "$env:Qt5_Dir\msbuild\" -Force
           Copy-Item "vstools\msbuild\Qt.targets" "$env:Qt5_Dir\msbuild\" -Force
+
+      - name: Verify QtMsBuild
+        run: dir "$env:Qt5_Dir\msbuild"
+
 
       - name: Verify QtMsBuild
         run: dir "$env:Qt5_Dir\msbuild"
