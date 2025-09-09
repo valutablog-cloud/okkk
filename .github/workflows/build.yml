@@ -1,1 +1,33 @@
+name: Build VPN Clients (Win32)
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup MSBuild
+        uses: microsoft/setup-msbuild@v2
+
+      - name: Build IPSharkk (x86)
+        run: msbuild 1111111/IPSharkk.sln /p:Configuration=Release /p:Platform=Win32
+
+      - name: Build TuxlerProxy (x86)
+        run: msbuild 1111111/TuxlerProxy.sln /p:Configuration=Release /p:Platform=Win32
+
+      - name: Upload EXE artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: VPNClients
+          path: |
+            1111111/Release/*.exe
+            1111111/x86/Release/*.exe
 
