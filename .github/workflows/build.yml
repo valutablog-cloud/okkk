@@ -19,12 +19,26 @@ jobs:
         with:
           version: '5.15.2'
           arch: win32_msvc2019
+          tools: 'tools_qtcreator,qt5-msbuild'
 
       - name: Add Qt bin to PATH (persist)
         run: |
           echo "QTDIR=$env:Qt5_Dir" >> $env:GITHUB_ENV
-          echo "QtMsBuild=$env:Qt5_Dir\msbuild" >> $env:GITHUB_ENV
           echo "$env:Qt5_Dir\bin" >> $env:GITHUB_PATH
+
+      - name: Find Qt.props (debug)
+        run: |
+          echo "Searching for Qt.props..."
+          dir $env:Qt5_Dir\..\..\..\Tools\QtMsBuild /s /b | findstr Qt.props || echo "Qt.props not found"
+
+      - name: Set QtMsBuild env
+        run: |
+          $qtProps = Get-ChildItem -Path $env:Qt5_Dir\..\..\..\Tools\QtMsBuild -Recurse -Filter Qt.props | Select-Object -First 1
+          if ($qtProps) {
+            echo "QtMsBuild=$($qtProps.DirectoryName)" >> $env:GITHUB_ENV
+          } else {
+            echo "Qt.props not found, build may fail"
+          }
 
       - name: Verify Qt tools
         run: qmake -v
