@@ -30,14 +30,15 @@ jobs:
       - name: Download QtMsBuild
         run: |
           git clone --depth=1 https://github.com/qt-labs/vstools.git
-          mkdir "$env:Qt5_Dir\msvc2019\msbuild"
-          Copy-Item "vstools\QtMsBuild\*" "$env:Qt5_Dir\msvc2019\msbuild\" -Recurse -Force
+          mkdir "$env:Qt5_Dir\msbuild"
+          Copy-Item "vstools\QtMsBuild\*" "$env:Qt5_Dir\msbuild\" -Recurse -Force
 
       - name: Verify QtMsBuild
-        run: dir "$env:Qt5_Dir\msvc2019\msbuild"
+        run: dir "$env:Qt5_Dir\msbuild"
 
       - name: Set QtMsBuild env
-        run: echo "QtMsBuild=$env:Qt5_Dir\msvc2019\msbuild" >> $env:GITHUB_ENV
+        run: echo "QtMsBuild=$env:Qt5_Dir\msbuild" >> $env:GITHUB_ENV
+
 
       - name: Setup MSBuild
         uses: microsoft/setup-msbuild@v2
