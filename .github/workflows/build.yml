@@ -29,22 +29,9 @@ jobs:
       # --- Добавляем QtMsBuild ---
       - name: Download QtMsBuild
         run: |
-          git clone --depth=1 https://github.com/qt-labs/vstools.git
+          git clone --depth=1 https://github.com/qt-labs/vstools.git vstools_src
           mkdir "$env:Qt5_Dir\msbuild"
-          Copy-Item "vstools\msbuild\*" "$env:Qt5_Dir\msbuild\" -Recurse -Force
-          Copy-Item "vstools\msbuild\Qt.props" "$env:Qt5_Dir\msbuild\" -Force
-          Copy-Item "vstools\msbuild\Qt.targets" "$env:Qt5_Dir\msbuild\" -Force
-
-      - name: Verify QtMsBuild
-        run: dir "$env:Qt5_Dir\msbuild"
-
-
-      - name: Verify QtMsBuild
-        run: dir "$env:Qt5_Dir\msbuild"
-
-      - name: Set QtMsBuild env
-        run: echo "QtMsBuild=$env:Qt5_Dir\msbuild" >> $env:GITHUB_ENV
-
+          Copy-Item "vstools_src\msbuild\*" "$env:Qt5_Dir\msbuild\" -Recurse -Force
 
       - name: Setup MSBuild
         uses: microsoft/setup-msbuild@v2
