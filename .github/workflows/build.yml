@@ -31,7 +31,10 @@ jobs:
         run: |
           git clone --depth=1 https://github.com/qt-labs/vstools.git vstools_src
           mkdir "$env:Qt5_Dir\msbuild"
-          Copy-Item "vstools_src\msbuild\*" "$env:Qt5_Dir\msbuild\" -Recurse -Force
+          Copy-Item "vstools_src\QtMsBuild\*" "$env:Qt5_Dir\msbuild\" -Recurse -Force
+          echo "Contents of msbuild folder:"
+          dir "$env:Qt5_Dir\msbuild"
+
 
       - name: Setup MSBuild
         uses: microsoft/setup-msbuild@v2
