@@ -54,11 +54,11 @@ jobs:
 
       # --- Билдим Win32 ---
       - name: Build IPSharkk (Win32)
-        run: msbuild IPSharkk.sln /p:Configuration=Release /p:Platform=Win32 /verbosity:minimal
+        run: msbuild TuxlerProxy.sln /p:Configuration=Release /p:Platform=Win32 /verbosity:minimal
 
       # --- Билдим x64 ---
       - name: Build IPSharkk (x64)
-        run: msbuild IPSharkk.sln /p:Configuration=Release /p:Platform=x64 /verbosity=minimal
+        run: msbuild TuxlerProxy.sln /p:Configuration=Release /p:Platform=x64 /verbosity=minimal
 
       # --- Выгружаем exe ---
       - name: Upload EXE artifacts
