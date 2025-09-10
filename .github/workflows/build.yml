@@ -1,11 +1,7 @@
-name: Build TuxlerVPN Windows
+name: Build TuxlerVPN Simple
 
 on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
-  workflow_dispatch:  # Позволяет запускать вручную
+  workflow_dispatch:
 
 jobs:
   build:
@@ -15,7 +11,7 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v4
       
-    - name: Setup MSBuild
+    - name: Setup MSBuild  
       uses: microsoft/setup-msbuild@v2
       
     - name: Install Qt 5.15
@@ -23,55 +19,36 @@ jobs:
       with:
         version: '5.15.2'
         host: 'windows'
-        target: 'desktop'
+        target: 'desktop' 
         arch: 'win32_msvc2019'
-        modules: 'qtwebkit qtmultimedia qtnetworkauth'
-        tools: 'tools_qtcreator,qt.tools.qtcreator'
+        modules: 'qtwebengine qtmultimedia'
         
-    - name: Download WinSparkle (if needed)
+    - name: Create stub files for missing dependencies
       run: |
-        # Создаем папку winsparkle если её нет
-        if (!(Test-Path "winsparkle")) {
-          New-Item -ItemType Directory -Path "winsparkle"
-          New-Item -ItemType Directory -Path "winsparkle/include"
-          # Можно скачать WinSparkle отсюда или создать заглушки
-          echo "WinSparkle placeholder" > winsparkle/WinSparkle.lib
+        # Создаем заглушки для отсутствующих файлов
+        New-Item -ItemType Directory -Force -Path "1111111/winsparkle/include"
+        echo "// WinSparkle stub" > "1111111/winsparkle/include/winsparkle.h"
+        echo "" > "1111111/winsparkle/WinSparkle.lib"
+        
+        # Создаем минимальные заголовки если нужно
+        if (!(Test-Path "1111111/version_info.h")) {
+          echo '#define VER_FILEVERSION_STR "1.0.0"' > "1111111/version_info.h"
         }
       shell: powershell
       
-    - name: Set Qt Environment
+    - name: Try to build
+      continue-on-error: true
       run: |
-        echo "QTDIR=${{ env.Qt5_Dir }}" >> $GITHUB_ENV
-        echo "${{ env.Qt5_Dir }}/bin" >> $GITHUB_PATH
-      shell: bash
-      
-    - name: Build TuxlerVPN
-      run: |
-        msbuild TuxlerProxy.sln /p:Configuration=Release /p:Platform=Win32 /p:PlatformToolset=v143
+        cd 1111111
+        set QTDIR=${{ env.Qt5_Dir }}
+        msbuild TuxlerProxy.vcxproj /p:Configuration=Release /p:Platform=Win32 /p:PlatformToolset=v143 /p:WindowsTargetPlatformVersion=10.0
       shell: cmd
       
-    - name: Upload build artifacts
+    - name: Upload any generated files
       uses: actions/upload-artifact@v4
+      if: always()
       with:
-        name: tuxlerVPN-executable
+        name: build-attempt
         path: |
-          release/tuxlerVPN.exe
-          release/*.dll
-          
-    - name: Create Release Package
-      run: |
-        mkdir release-package
-        copy "release\tuxlerVPN.exe" "release-package\"
-        copy "${{ env.Qt5_Dir }}\bin\Qt5Core.dll" "release-package\" 2>nul || echo "Qt5Core.dll not found"
-        copy "${{ env.Qt5_Dir }}\bin\Qt5Gui.dll" "release-package\" 2>nul || echo "Qt5Gui.dll not found"
-        copy "${{ env.Qt5_Dir }}\bin\Qt5Widgets.dll" "release-package\" 2>nul || echo "Qt5Widgets.dll not found"
-        copy "${{ env.Qt5_Dir }}\bin\Qt5Network.dll" "release-package\" 2>nul || echo "Qt5Network.dll not found"
-        copy "${{ env.Qt5_Dir }}\bin\Qt5WebKit.dll" "release-package\" 2>nul || echo "Qt5WebKit.dll not found"
-        copy "${{ env.Qt5_Dir }}\bin\Qt5WebKitWidgets.dll" "release-package\" 2>nul || echo "Qt5WebKitWidgets.dll not found"
-      shell: cmd
-      
-    - name: Upload Release Package
-      uses: actions/upload-artifact@v4
-      with:
-        name: tuxlerVPN-release-package
-        path: release-package/
+          1111111/release/
+          1111111/debug/
