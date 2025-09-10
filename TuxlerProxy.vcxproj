@@ -14,11 +14,11 @@
     <ProjectGuid>{2BBD6B01-3F06-33C5-83B1-B15197641359}</ProjectGuid>
     <RootNamespace>TuxlerProxy</RootNamespace>
     <Keyword>Qt4VSv1.0</Keyword>
-    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
-    <PlatformToolSet>v143</PlatformToolSet>
+    <PlatformToolSet>v120_xp</PlatformToolSet>
     <OutputDirectory>release\</OutputDirectory>
     <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
     <CharacterSet>MultiByte</CharacterSet>
@@ -29,7 +29,7 @@
     <WholeProgramOptimization>false</WholeProgramOptimization>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
-    <PlatformToolSet>v143</PlatformToolSet>
+    <PlatformToolSet>v120_xp</PlatformToolSet>
     <OutputDirectory>debug\</OutputDirectory>
     <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
     <CharacterSet>MultiByte</CharacterSet>
@@ -6281,6 +6281,4 @@ $(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_DISABLE_DEPRECATED_BEFORE=0x000000 
       <UserProperties Qt5Version_x0020_Win32="msvc2013" />
     </VisualStudio>
   </ProjectExtensions>
-
 </Project>
-
