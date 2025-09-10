@@ -1,0 +1,202 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="qrc:/gui/chosen.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="qrc:/gui/perfect-scrollbar.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="./gui/style.css" type="text/css" media="all" />
+
+    <script type="text/javascript" src="qrc:/gui/jquery-1.7.2.js">
+    </script>
+    <script type="text/javascript" src="qrc:/gui/chosen.jquery.js">
+    </script>
+    <script type="text/javascript" src="qrc:/gui/perfect-scrollbar.jquery.js">
+    </script>
+
+    <script type="text/javascript" src="qrc:/gui/scripts.js">
+    </script>
+</head>
+<body id="bodyid" class="bodyfree">
+    <div id="boxip">
+        <div class="outerBox">
+            <div class="box location">
+                <div class="header gradientHeader">
+                    current ip location
+                </div>
+                <div class="content gradientRow2">
+                    <div id="country">
+                        <img id="imgbox" src='qrc:/images/loadingflag.gif' alt="" />
+                        <span id="countrybox">
+                            Loading...
+                        </span>
+                    </div>
+                    <div id="city">
+                        Loading...
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="outerBox">
+            <div class="box changing">
+                <div class="header gradientHeader">
+                    ip changing
+                </div>
+                <div class="content gradientRow2">
+                    <div class="wrapperBox">
+                        <span class="label">
+                            OFF
+                        </span>
+                        <div class="onoffswitch">
+                            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="iplistswitch" checked="" />
+                            <label class="onoffswitch-label" for="iplistswitch">
+                                <div class="onoffswitch-inner">
+                                </div>
+                                <div class="onoffswitch-switch">
+                                </div>
+                            </label>
+                        </div>
+                        <span class="label">
+                            On
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="container">
+        <div style="position:relative">
+            <div style="width:100%;">
+                <div id="myGrid" style="width:100%;height:400px;">
+
+                    <div class="prefs">
+                        <div id="tab1" class="prefs_inner">
+
+                            <h2 class="title_prefs">
+                                preferred location <a class="infolink" href="#">
+                                    <img src="qrc:/gui/qm.png" />
+                                    <div class="tooltip">
+                                        You are going to get nearest possible location available at the moment.
+                                    </div>
+                                </a>
+                            </h2>
+
+                            <div class="residential">
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <div class="residential-text">Use Residential Locations:</div>
+                                        </td>
+                                        <td>
+                                            <div id="residential-id" class="toggle-button residential-switch">
+                                                <span></span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                            <div class="select-holder">
+
+                                <span class="preferred">
+                                    Country
+                                </span>
+                                <br />
+                                <select class="country-select" id="country-select" tabindex="2"></select>
+                            </div>
+                            <div class="spacer">
+                            </div>
+                            <div class="select-holder">
+                                <span class="preferred">
+                                    City
+                                </span>
+                                <br />
+                                <select class="city-select" id="city-select" tabindex="2"></select>
+                            </div>
+                            <div class="spacer">
+                            </div><div class="spacer">
+                            </div>
+                            <button id="next_nearby">
+                                Reload to next nearby location
+                            </button>
+
+                            <span class="upgrade_to_premium_">Upgrade to Premium</span>
+                            <span class="upgrade_to_premium_free_">Get Free Premium Time</span>
+
+                            <div class="premium_info">
+                                <h2 class="dotted"></h2>
+                                <span class="premium_title">Premium subscription expires in <span id="expire_days">... days</span></span>
+                                <br />
+                                <span class="info_premium">IP location pool: <span id="ip_location_pool">...</span></span>
+                                <br />
+                                <span class="info_premium">Location changes: <span id="ip_location_changes">...</span></span>
+                                <br />
+                                <span class="info_premium">Country selection: <span id="country_enabled">...</span></span>
+                                <br />
+                                <span class="info_premium">City selection: <span id="city_enabled">...</span></span>
+                                <br />
+                                <span class="info_premium">Bandwidth (MB): <span id="bandwidth">...</span></span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div id="pager" style="width:100%;height:20px;">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="buypro">
+        <span class="upgrade_to_premium">Upgrade to Premium</span>
+        <span class="upgrade_to_premium_free">Get Free Premium Time</span>
+    </div>
+    <div id="loginbox">
+        <div id="center">
+
+
+            <table>
+                <tr>
+                    <td class="righttd">
+                        <span class="textloginpass">
+                            Login (email):
+                        </span>
+                    </td>
+                    <td>
+                        <input id="email" class="login" type="text" name="fname" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="righttd">
+                        <span class="textloginpass">
+                            Password:
+                        </span>
+                    </td>
+                    <td>
+                        <input id="password" class="login" type="password" name="lname" />
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <table id="loginbuttons" style="width:100%">
+                            <tr>
+                                <td>
+                                    <button id="cancellogin" class="btn">
+                                        Cancel
+                                    </button>
+                                </td>
+                                <td>
+                                    <button class="btn" id="oklogin">
+                                        Login
+                                    </button>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+</body>
+</html>
