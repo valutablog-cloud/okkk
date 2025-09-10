@@ -60,7 +60,19 @@ jobs:
         $vcxproj = $vcxproj -replace "Qt5WebKitWidgets\.lib;", ""
         $vcxproj | Out-File -FilePath "TuxlerProxy_simple.vcxproj" -Encoding UTF8
       shell: powershell
+    - name: Stub Qt tools
+      run: |
+        mkdir "C:\Qt\5.12.12\msvc2017\bin" -Force
+        # создаём moc.exe
+        echo '@echo off' > C:\Qt\5.12.12\msvc2017\bin\moc.bat
+        echo 'echo // moc stub > %2' >> C:\Qt\5.12.12\msvc2017\bin\moc.bat
+        # копируем как uic.exe и rcc.exe
+        copy C:\Qt\5.12.12\msvc2017\bin\moc.bat C:\Qt\5.12.12\msvc2017\bin\uic.bat
+        copy C:\Qt\5.12.12\msvc2017\bin\moc.bat C:\Qt\5.12.12\msvc2017\bin\rcc.bat
 
+        # добавляем в PATH
+        echo "C:\Qt\5.12.12\msvc2017\bin" | Out-File -FilePath $env:GITHUB_PATH -Append
+      shell: powershell
     - name: Build TuxlerProxy
       run: |
         msbuild TuxlerProxy.sln /p:Configuration=Release /p:Platform=Win32 /verbosity:minimal
